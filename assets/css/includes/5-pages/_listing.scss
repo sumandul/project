@@ -1,0 +1,95 @@
+.listingshow {
+  margin-top: 50px;
+  .icon {
+    position: relative;
+    .list-icon {
+      position: absolute;
+      top: 17px;
+      left: 12px;
+      font-size: 25px;
+      color: $text-color;
+    }
+  }
+  .form-select {
+    padding: 14px 40px;
+  }
+  .form-control {
+    padding: 14px 25px;
+    font-size: 20px;
+    @include media('<=desktop') {
+      padding: 10px 25px !important;
+    }
+  }
+  .list-search-btn {
+    position: absolute;
+    top: -4px;
+    right: 1px;
+    background-color: $green;
+    border-radius: 15px;
+    padding: 20px 25px;
+    @include media('<=desktop') {
+      padding: 10px 25px !important;
+      top: 2px !important;
+    }
+  }
+  .la-search {
+    color: #fff;
+    font-size: 23px;
+  }
+}
+.property-list {
+  .listing {
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      color: #717171;
+    }
+    h1 {
+      font-size: 32px;
+    }
+    @include media('<=tablet') {
+      flex-direction: row !important;
+    }
+    @include potrait {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+    }
+  }
+  .loadmore-btn {
+    .la-arrow-right {
+      font-size: 28px;
+      margin-left: 10px;
+    }
+    background-color: $lightgreen;
+    padding: 15px 60px;
+    border-radius: 15px;
+    a {
+      color: $green;
+      text-transform: capitalize;
+      font-size: 18px;
+    }
+  }
+  .property-box {
+    position: relative;
+  }
+  .sort {
+    font-size: 14px;
+  }
+  .price {
+    padding-left: 6px;
+    font-weight: 500;
+    color: #4d4d4d;
+    i {
+      margin-left: 6px;
+      font-size: 25px;
+    }
+  }
+  .filter {
+    .la-sort-amount-up-alt,
+    .la-sort-amount-down {
+      font-size: 30px;
+      color: $green;
+      cursor: pointer;
+    }
+  }
+}

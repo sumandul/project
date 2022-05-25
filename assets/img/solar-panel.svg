@@ -1,0 +1,15 @@
+<svg id="solar-panel" xmlns="http://www.w3.org/2000/svg" width="40" height="32.812" viewBox="0 0 40 32.812">
+  <path id="Path_154" data-name="Path 154" d="M1.18,383.035H34.071a1.172,1.172,0,1,0,0-2.343H32.9V379.52a1.171,1.171,0,0,0-1.172-1.172H28.211v-2.343H25.867v2.343H22.352a1.171,1.171,0,0,0-1.172,1.172v1.172H14.149V379.52a1.171,1.171,0,0,0-1.172-1.172H9.461v-2.343H7.117v2.343H3.524a1.171,1.171,0,0,0-1.172,1.172v1.172H1.18a1.172,1.172,0,1,0,0,2.343Z" transform="translate(-0.007 -350.223)" fill="#026936" opacity="0.4"/>
+  <path id="Path_155" data-name="Path 155" d="M30.166,156.005h-7.03l-1.389,6.249h7.03Z" transform="translate(-20.049 -147.411)" fill="#026936"/>
+  <path id="Path_156" data-name="Path 156" d="M149.516,162.254l1.389-6.249h-7.03l-1.389,6.249Z" transform="translate(-131.354 -147.411)" fill="#026936"/>
+  <path id="Path_157" data-name="Path 157" d="M175.032,47.431a1.171,1.171,0,0,0-1.144-1.426h-5.569l-1.389,6.249h7.03Z" transform="translate(-153.888 -46.005)" fill="#026936"/>
+  <path id="Path_158" data-name="Path 158" d="M1.172,272.254H6.819l1.389-6.249H1.178l-1.15,4.823A1.173,1.173,0,0,0,1.172,272.254Z" transform="translate(0 -248.817)" fill="#026936"/>
+  <path id="Path_159" data-name="Path 159" d="M54.611,46.005H48.522a1.171,1.171,0,0,0-1.144.918l-1.185,5.331h7.03Z" transform="translate(-42.585 -46.005)" fill="#026936"/>
+  <path id="Path_160" data-name="Path 160" d="M118.041,272.254h6.09a1.172,1.172,0,0,0,1.144-.918l1.185-5.331h-7.03Z" transform="translate(-108.819 -248.817)" fill="#026936"/>
+  <path id="Path_161" data-name="Path 161" d="M268.778,162.254l1.389-6.249h-7.03l-1.389,6.249Z" transform="translate(-241.298 -147.411)" fill="#026936"/>
+  <path id="Path_162" data-name="Path 162" d="M389.516,162.254l1.389-6.249h-7.03l-1.389,6.249Z" transform="translate(-352.603 -147.411)" fill="#026936"/>
+  <path id="Path_163" data-name="Path 163" d="M415.11,47.431a1.171,1.171,0,0,0-1.144-1.426h-5.647l-1.389,6.249h7.03Z" transform="translate(-375.138 -46.005)" fill="#026936"/>
+  <path id="Path_164" data-name="Path 164" d="M241.028,270.828a1.172,1.172,0,0,0,1.144,1.426h5.568l1.389-6.249H242.1Z" transform="translate(-222.171 -248.817)" fill="#026936"/>
+  <path id="Path_165" data-name="Path 165" d="M294.61,46.005h-6.09a1.171,1.171,0,0,0-1.144.918l-1.185,5.331h7.03Z" transform="translate(-263.833 -46.005)" fill="#026936"/>
+  <path id="Path_166" data-name="Path 166" d="M358.041,272.254h6.09a1.172,1.172,0,0,0,1.144-.918l1.185-5.331h-7.03Z" transform="translate(-330.067 -248.817)" fill="#026936"/>
+</svg>

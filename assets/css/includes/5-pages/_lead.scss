@@ -1,0 +1,49 @@
+
+
+.lead-row{
+  
+    @include media('>=desktop') {
+        width: 100%!important;
+
+             }
+}
+
+.cancel{
+    background-color: $lightgrey;
+    padding: 10px 50px;
+    border-radius: 15px;
+    a{
+        color: $text-color;
+    }
+}
+.add-lead{
+    padding: 10px 50px;
+    border-radius: 15px;
+    background-color: $green;
+    a{
+        color: #ffff;
+    }
+}
+
+.user-lead{
+    
+    .form-control{
+        padding: 16px 40px;
+        font-size: 18px;
+        text-transform: capitalize;
+    }
+    position: relative;
+    .las{
+        position: absolute;
+        left: 10px;
+        top: 17px;
+        font-size: 23px;
+        color: $text-color;
+        
+    }
+}
+
+.alllead-table{
+    
+     
+}

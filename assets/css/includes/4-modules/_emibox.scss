@@ -1,0 +1,75 @@
+.emi-box-1{
+    margin-top: 110px!important;
+}
+.emi {
+     
+    border-radius: 20px;
+    padding: 34px 35px;
+    .result {
+        text-transform: capitalize;
+    }
+    .emi-box {
+        border-radius: 20px;
+        padding: 18px 20px;
+        background-color: $lightgreen;
+        text-align: center;
+        span {
+            display: block;
+        }
+       
+    }
+
+    h1 {
+        font-size: 40px;
+        @include media("<=tablet") {
+           font-size: 28px!important;
+             }
+    }
+    border: 1px solid #E6E6E6;
+    label {
+        text-transform: capitalize;
+        color: $text-color;
+    }
+    .npr {
+     
+        h6{
+            font-size: 18px;
+        }
+    }
+    .month {
+        font-size: 15px;
+        padding-right: 27px;
+        text-transform: capitalize;
+        color: $text-color;
+    }
+    .form-select {
+        display: block;
+        @include bordernone;
+        color: $text-color;
+        background-color: #f4f4f4;
+        padding: 10px 17px;
+        border-radius: 10px;
+        text-transform: capitalize;
+    }
+    input {
+        display: block;
+        @include bordernone;
+        color: $text-color;
+        background-color: #f4f4f4;
+        padding: 10px 17px;
+        border-radius: 10px;
+        text-transform: capitalize;
+        width: 100%;
+        //   position: relative;
+        &::after {
+            content: "";
+            width: 10%;
+            height: 30px;
+            position: absolute;
+            background-color: red;
+            top: 0;
+            left: 12px;
+            z-index: 888;
+        }
+    }
+}

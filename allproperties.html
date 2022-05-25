@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="keywords" content="Keywords" />
+    <meta name="description" content="Description" />
+    <meta name="title" property="og:title" content="Title" />
+    <meta property="og:type" content="website" />
+    <meta name="description" property="og:description" content="detail" key="ogdesc" />
+    <meta property="og:site_name" content="AOC" key="ogsitename" />
+    <meta property="og:url" content="https://aoc.com" key="ogurl" />
+    <meta name="application-name" content="aoc" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="aoc" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="msapplication-config" content="/static/icons/browserconfig.xml" />
+    <meta name="msapplication-TileColor" content="#800000" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="theme-color" content="#800000" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/media/logo.png" />
+    <link rel="icon" type="image/svg" sizes="16x16" href="/media/load-svg.svg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="https://aoc.com.np/" />
+    <meta name="twitter:title" content="aoc" />
+    <meta name="twitter:description" content="desc" />
+    <meta name="twitter:image" content="/imageurl" />
+    <meta name="twitter:creator" content="@aoc" />
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendors/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/vendors/aos/aos.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <section class="property-wrapper py-5">
+  <div id="myModal" class="modal fade">
+    <div class="modal-dialog modal-confirm modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header flex-column">
+         					
+          <h6 class="modal-title w-100 text-center delete-confirm-title">Do you  want to delete these Property?</h6>	
+                 
+          <p> </p>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-danger " id="delete-confirm">Delete</button>
+          <button type="button" class="btn btn-secondary ms-5" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="confirmtoast p-3 z-index-222"  hidestyle="z-index: 11" ></div>
+  <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true"  data-bs-delay="3000"  data-bs-animation="true">
+    <div class="toast-header d-flex align-items-center justify-content-between">
+      <a class="navbar-brand" href="index.html"><img src="assets/img/Original.png" alt="" class="img-fluid" style="width: 130px ;"></a>
+ 
+ 
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      <p class="text_p">You request to sell or rent property had been sent.</p>
+    </div>
+  </div>
+</div>
+
+  <!-- Button trigger modal -->
+ 
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row">
+        <div class="col-12 text-end pe-4">
+          <button type="button" class="btn-close py-3 px-4" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      </div>      
+      <div class="modal-body">
+       <h6> we're Here to help you.</h6>
+       <div class="form-check my-2">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">
+         <p class="text_p"> I accept term and condition</p>
+        </label>
+      </div>
+     <div class="row">
+       <div class="col-12 text-end">
+        <button type="button" class="btn  help " id="toastbtn" data-bs-dismiss="modal" aria-label="Close">Confirm</button>
+       </div>
+     </div>
+      </div>
+          
+       
+       
+      </div> 
+    </div>
+  </div>
+</div>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+    <div class="container-fluid px-5">
+      <a class="navbar-brand" href="index.html"><img src="assets/img/Original.png" alt="" class="img-fluid" style="width: 160px;"></a>
+      <button type="button" class="btn btn-success btn-hover btn_a add-btn-mobile"><a href="addproperty.html" class="d-flex justify-content-center align-items-center  "> <i class="las la-plus me-2"></i>Add listing</a></button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <i class="las la-bars"></i>
+
+  </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto align-items-center mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link  " aria-current="page" href="sellhome.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="buyhomeland.html">land</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="rent.html">rent</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="adverties.html">advertise</a>
+          </li>
+            <li class="nav-item ">
+        <a href="login.html" class="nav-link">login in</a>
+            </li>
+            <li class="nav-item">
+              <a href="signup.html" class="nav-link">sign in</a>
+                  </li>
+                  <li class="nav-item add-btn-hide">
+                    <button type="button" class="btn btn-success btn-hover btn_a"><a href="addproperty.html" class="d-flex justify-content-center align-items-center  "> <img src="./assets/img/Fill 4.svg" class="me-2 " alt="" class="svg-icon"> Add listing</a></button>
+                        </li>
+                  
+        </ul>
+       
+       
+  <span></span>
+      </div>
+    </div>
+  </nav>
+</header>
+      <section class="add" style="margin-top: 17px;">
+            <div class="container-fluid px-5">
+                <div class="row gx-5 gy-4">
+                  <div class="col-sm-12 col-lg-3 fix-dashboard">
+                 
+
+                    <div class="user-dashboard-profile">
+                         <div class="user-profile-dashboard d-flex align-items-center justify-content-between">
+                              <div class="img-box d-flex align-items-center justify-content-center">
+                            
+                                   <img src='https://picsum.photos/50/50'  alt="" class="img-fluid">
+                                   <div class="property-owner ps-2">
+                                       <h6>suman dulal</h6>
+                                       <p>owner</p>
+                                   </div>
+                              </div>
+                              <div class="down-arrow-icon">
+                               
+              <a href="editprofile.html"><img src="./assets/img/Combined Shape.svg" class="me-3" alt=""></a>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="mobile-dashboard">
+                      <ul class="d-flex align-items-center justify-content-around">
+                          <li> <a href=""> <img src="./assets/img/Iconly-Bulk-Chart.svg" style="width: 30px;"
+                                      alt=""></a></li>
+                          <li><a href="addnew.html"> <img src="./assets/img/Iconly-Bulk-Home.svg"
+                                      style="width: 30px;" alt=""> </a></li>
+                          <li> <a href="saveproperty.html"> <img src="./assets/img/Iconly-Bulk-Heart.svg" style="width: 30px;"
+                                      alt=""> </a></li>
+                          <li> <a href="alllead.html"><img src="./assets/img/37.svg" alt=""
+                                      style="width: 30px;"></a>
+                          </li>
+
+
+                      </ul>
+
+                  </div>
+                    <div class="user-setting ">
+                        <div class="icon d-flex align-items-center">
+                         <img src="./assets/img/Iconly-Bulk-Chart.svg" class="me-2 svg-icon" alt="">
+                           <h6>My Dashboard</h6>
+                        </div>
+                        <div class="icon  active d-flex align-items-center mt-4">
+                           <img src="./assets/img/Iconly-Bulk-Home.svg" class="me-2"  alt="">
+                         <a href="addnew.html">  <h6> Properties</h6></a>
+                        </div>
+                        <div class="icon d-flex align-items-center mt-4">
+                         
+                            <img src="./assets/img/Iconly-Bulk-Heart.svg" class="me-2" alt="">
+                          <a href="saveproperty.html">
+                           <h6> Save Properties</h6>
+                          </a>
+                        </div>
+                        <div class="icon d-flex align-items-center mt-4">
+                       <img src="./assets/img/37.svg" class="me-2" alt="">
+                        <a href="lead.html"
+                        >
+                        <h6> Leads</h6></a>
+                        </div>
+                        <div class="icon d-flex align-items-center mt-4">
+                          <img src="./assets/img/Iconly-Bulk-Wallet.svg" class="me-2" alt="">
+                           <h6>Accounts & Finance</h6>
+                        </div>
+                        <div class="user-ad mt-5">
+                           <div class="row">
+                               <div class="col-12">
+                                  <div class="ads mt-2" style="min-height: 110px; width: 230px; background-image: url('https://picsum.photos/600/200'); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 15px;"></div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="logout d-flex align-items-center">
+                        
+                           <img src="./assets/img/Iconly-Bulk-Logout.svg" class="me-2" alt="">
+                           <h6><a href="">Log Out</a></h6>
+                       </div>
+                    </div>
+                 
+                   </div>
+                    <div class=" col-md-12 col-lg-9 addnew  " style="background-color: #fff;">
+                       <div class="">
+
+                           <div class="d-flex align-items-center title">
+                            <a href="addnew.html"> <button class="btn back"> <img src="./assets/img/Arrow - Right.svg" alt="" class="me-3" style="transform: rotate(180deg);">Back</button></a>
+                               <h5 class="ms-5">Properties</h5>
+                           </div>
+                           <div>
+
+                           <div class="property-listing mt-4">
+                               <div class="row gx-1 gy-4 listing-row" style="width:100%">
+                                <div class="col-6 col-md-3 col-lg-3">
+                                  <a href="addnew.html">  <button class="btn inner-add">Add Property</button></a>
+                                </div>
+                                <div class="col-6 col-md-3 col-lg-3">
+                                  <a href="allproperties.html">  <button class="btn inner-add  active ">All properties </button></a>
+                               </div>
+                               <div class="col-8 col-md-4 col-lg-3">
+                                <a href="pendingproperty.html">    <button class="btn inner-add "> Pending Properties</button></a>
+                               </div>
+                               <div class="col-4 col-md-2 col-lg-3">
+                                <a href="exireproperty.html">  <button class="btn inner-add ">  Expired </button></a>
+                               </div>
+                               </div>
+                           </div>
+                      
+                        <div class="listing">
+                            <div class="row gy-4">
+                              <div class="d-flex align-items-center py-4 justify-content-between">
+                                <h6 class="list-title">4 Listing</h6>
+                                <a href="addproperty.html"> <button class="d-flex align-items-center list-add btn"> <i class="las la-plus me-2"></i>Add More</button></a>
+                              </div>
+                                <div class="col-sm-6 col-md-6 col-lg-6">
+                              <div class="inner-box">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-lg-5 ">
+                                            <img src="./assets/img/Image 18.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="col-sm-12 col-lg-7 ">
+                                                 <h6 class="mt-4">9 Aanas Land</h6>
+                                                <div class="d-flex align-items-center mt-2">
+                                                    <img src="./assets/img/Iconly-Bulk-Location.svg" class="me-2" alt=""> <p class="mb-0">Jamsikhel Road ,Lalitpur</p>
+                                                </div>
+                                                <div class="action d-flex align-items-center justify-content-between mt-3">
+                                                    <div class="edit ">
+                                                        <a href="addproperty.html">
+                                                          <h6 class="d-flex align-items-center">edit <img src="./assets/img/Iconly-Bulk-Edit.svg" class="ms-2" style="width:18px" alt=""> </h6>
+                                                        </a>
+                                                    </div>
+                                                    <div class="bost">
+                                                      <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"><h6 class="d-flex align-items-center"> <img src="./assets/img/rocket.svg"  class="me-2" alt="" style="width: 15px;"> Boost</h6></a>
+                                                    </div>
+                                                    <div class="delete ">
+                                                      
+                                                        <img src="./assets/img/Group 47.svg" alt="">
+                                                      </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                              </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-6">
+                                  <div class="inner-box">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-lg-5 ">
+                                                <img src="./assets/img/Image 18.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="col-sm-12 col-lg-7 ">
+                                                     <h6 class="mt-4">9 Aanas Land</h6>
+                                                    <div class="d-flex align-items-center mt-2">
+                                                        <img src="./assets/img/Iconly-Bulk-Location.svg" class="me-2" alt=""> <p class="mb-0">Jamsikhel Road ,Lalitpur</p>
+                                                    </div>
+                                                    <div class="action d-flex align-items-center justify-content-between mt-3">
+                                                        <div class="edit ">
+                                                            <a href="addproperty.html">
+                                                              <h6 class="d-flex align-items-center">edit <img src="./assets/img/Iconly-Bulk-Edit.svg" class="ms-2" style="width:18px" alt=""> </h6>
+                                                            </a>
+                                                        </div>
+                                                        <div class="bost">
+                                                          <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"><h6 class="d-flex align-items-center"> <img src="./assets/img/rocket.svg"  class="me-2" alt="" style="width: 20px;"> Boost</h6></a>
+                                                        </div>
+                                                        <div class="delete ">
+                                                          
+                                                            <img src="./assets/img/Group 47.svg" alt="">
+                                                          </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                  </div>
+                                    </div>
+                            </div>
+                        </div>
+                 
+                </div>
+            </div>
+      </section>
+</section>
+  
+    <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/owl/owl.carousel.min.js text"></script>
+    <script src="assets/vendors/aos/aos.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script>
+  $(document).ready(function(){
+    $("#toastbtn").click(function(){
+    $('.toast').toast("show")
+    })
+  })
+
+    </script>
+</body>
+
+</html>

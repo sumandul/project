@@ -1,0 +1,70 @@
+@mixin tsn(
+  $property: all,
+  $time: 0.5s,
+  $easing: cubic-bezier(0.215, 0.61, 0.355, 1)
+) {
+  transition: $property $time $easing;
+}
+@mixin whteboxsadow{
+ 
+
+          box-shadow: 0 10px 6px -6px #777;
+
+}
+@mixin shadow($color: $p, $alpha: 0.6) {
+  box-shadow: 0px 10px 30px rgba($green, $alpha);
+}
+
+// @mixin bold {
+    
+// }
+
+// @mixin scrollbar() {
+//   overflow-y: scroll;
+//   &::-webkit-scrollbar {
+//     width: 5px;
+//   }
+//   &::-webkit-scrollbar-track {
+//     background: rgba($p, 0.08);
+//   }
+//   &::-webkit-scrollbar-thumb {
+//     background: rgba($p, 0.2);
+//   }
+// }
+
+// @keyframes rotateIn {
+//   from {
+//     transform: rotate(360deg);
+//   }
+//   to {
+//     transform: rotate(0deg);
+//   }
+// }
+ @mixin bordernone  {
+   outline: 0;
+   border: 0;
+ }
+ @mixin btn($td,$background,$radius,$size)  {
+    padding: $td;
+    background-color: $background;
+    border-radius: $radius;
+    font-size: $size;
+}
+@mixin potrait{
+  @media (max-width:480px) {
+    @content
+  }
+
+};
+@mixin tablet{
+  @media (min-width:480px) and (max-width:1050px) {
+    @content
+  }
+
+};
+@mixin min-desktop{
+  @media (min-width:1050px) and (max-width:1400px) {
+    @content
+  }
+
+}

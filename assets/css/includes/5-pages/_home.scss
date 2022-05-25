@@ -1,0 +1,765 @@
+.body-wrapper {
+  overflow-x: hidden;
+}
+.new {
+  background-color: $blue !important;
+  color: #fff;
+  font-size: 12px !important;
+  text-transform: capitalize;
+  position: absolute;
+  padding: 8px 9px !important;
+  border-radius: 12px;
+  left: 58px;
+  top: 44px;
+}
+.mark {
+  padding: 5px;
+  background-color: $green;
+  position: absolute;
+  border-radius: 50%;
+  top: 50px;
+  right: 50px;
+  color: #fff;
+  font-size: 20px;
+}
+.banner-top {
+  margin-top: 150px !important;
+  @include media('<=desktop') {
+    margin-top: 109px !important;
+  }
+}
+.banner {
+  position: relative;
+  .banner-content {
+    @include media('<=desktop') {
+      flex-direction: column !important;
+    }
+    .banner-title {
+      @include min-desktop {
+      }
+      z-index: 777;
+      .banner-inner {
+        .sub-title {
+          position: absolute;
+          @include potrait {
+            top: 42px !important;
+            padding-left: 6px !important;
+          }
+          @include media('<=desktop') {
+            top: 65px;
+            padding-left: 10px;
+          }
+          @include media('>=desktop') {
+            top: 40px;
+            padding-left: 0px;
+          }
+        }
+      }
+
+      h1 {
+        display: inline;
+        z-index: 1;
+        font-size: 54px;
+        position: absolute;
+        @include potrait {
+          left: 0 !important;
+          font-size: 31px !important;
+          padding-top: 70px !important;
+          padding-left: 18px !important;
+        }
+        @include media('<=desktop') {
+          left: 0px;
+          font-size: 53px;
+          padding-top: 95px;
+          padding-left: 21px;
+        }
+        @include media('>=desktop') {
+          padding-top: 65px;
+          font-size: 64px;
+          left: 9px;
+        }
+        .sub-title-1 {
+          margin-top: 4px;
+          z-index: -1;
+          // background-color: grey;
+          background-color: #fff;
+          // padding: 12px 0px;
+          padding-right: 40px;
+          border-top-right-radius: 15px;
+          border-bottom-right-radius: 15px;
+          @include media('<=tablet') {
+            padding-right: 0px !important;
+          }
+          @include media('<=desktop') {
+            background-color: transparent !important;
+          }
+        }
+      }
+      flex-basis: 40%;
+      @include min-desktop {
+        flex-basis: 60%;
+      }
+    }
+  }
+  .banner-img {
+    z-index: -1;
+    overflow: visible;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      background-color: rgba(#fff, 0.7);
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      visibility: hidden;
+      @include media('<=desktop') {
+        visibility: visible;
+      }
+    }
+    flex-basis: 60%;
+    img {
+      height: 600px;
+      width: 100%;
+      border-radius: 15px;
+      object-fit: cover;
+      object-position: center center;
+      transition: all 0.5s linear;
+      @include min-desktop {
+        height: 550px;
+      }
+      @include potrait {
+        height: 536px !important;
+      }
+      @include media('<=desktop') {
+        height: 582px;
+      }
+    }
+  }
+  .tab {
+    width: 650px;
+    @include potrait {
+      width: 350px;
+    }
+    .search-btn-filter {
+      background-color: $lightgreen !important;
+    }
+    .tab-content {
+      .active {
+        background-color: none !important;
+      }
+    }
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    @include potrait {
+      border-top-right-radius: 0px !important;
+    }
+    box-shadow: -3px 6px 40px #72727230;
+    background-color: #fff;
+    padding: 40px 10px;
+
+    input {
+      width: 100%;
+      border-radius: 15px;
+      padding: 12px 20px;
+      background-color: $lightgrey;
+      color: $text-color;
+      font-size: 18px;
+      font-weight: 500;
+      @include bordernone;
+      @include media('<=tablet') {
+        font-size: 13px !important;
+      }
+      @include media('<=desktop') {
+      }
+    }
+  }
+  .banner-input-section {
+    p {
+      font-size: 14px !important;
+    }
+    @include min-desktop {
+      // background-color:red;
+      left: 0px;
+      bottom: -30px !important;
+    }
+
+    z-index: 333;
+    #pills-rent-tab {
+      border-top-right-radius: 20px !important;
+      border-top-left-radius: 0px !important;
+      // background-color: red!important;
+    }
+    #pills-profile-tab {
+      border-top-right-radius: 0px !important;
+      @include potrait {
+        border-top-right-radius: 0 !important;
+      }
+      border-top-left-radius: 0px !important;
+    }
+
+    .nav-link {
+      h5 {
+        font-size: 14px;
+      }
+      background-color: #ffff;
+      box-shadow: -3px 6px 40px #72727230;
+      color: #000;
+      color: $text-color;
+      padding: 13px 34px;
+      @include potrait {
+        padding: 13px 41px !important;
+      }
+      border-radius: 0 !important;
+
+      border-top-left-radius: 20px !important;
+      @include media('<=tablet') {
+        padding: 13px 26px;
+      }
+      @include media('<=desktop') {
+        padding: 16px 26px;
+      }
+    }
+    .nav-pills {
+      .active {
+        background-color: $green !important;
+        color: #fff;
+      }
+    }
+    padding: 57px 0px;
+    position: absolute;
+
+    @include media('<=desktop') {
+      left: 15px;
+      bottom: 47px;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+    @include media('>=desktop') {
+      left: 0px;
+      bottom: -1px;
+    }
+  }
+}
+// .tablet-view-hide{
+//     @include media('<=desktop') {
+//         display: none!important;
+
+//                }
+// }
+// .tablet-view{
+//     @include potrait{
+//         flex-direction: column;
+//         margin-bottom: 20px;
+//     }
+//     @include media('>=desktop') {
+//       display: none!important;
+
+//              }
+// }
+
+.banner-botton {
+  padding: 50px 0px;
+  .icon-content {
+    padding: 0px 0px;
+    border-radius: 15px;
+    background-color: $lightgrey;
+    img {
+      margin-right: 7px !important;
+    }
+
+    a {
+      .text {
+        p {
+          line-height: 26px;
+          font-family: Roboto, sans-serif !important;
+          font-size: 16px !important;
+        }
+      }
+      span {
+        h5 {
+          text-transform: capitalize;
+          font-size: 24px;
+          color: black;
+
+          @include potrait {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  .las {
+    font-size: 50px;
+    color: $green;
+  }
+}
+.explore {
+  h1 {
+    font-size: 32px;
+  }
+  padding: 100px 0px !important;
+  .explore-content {
+    img {
+      border-radius: 15px !important;
+      object-fit: cover;
+    }
+  }
+  .expolre-property {
+    padding-top: 146px;
+  }
+}
+.explore-home {
+  cursor: pointer;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: $lightgreen;
+  text-align: center;
+  transition: backgroundcolor 6s linear;
+  &:hover {
+    background-color: $green !important;
+    i {
+      color: #ffff;
+    }
+    h6 {
+      color: #fff;
+    }
+  }
+  h6 {
+    color: $green;
+    text-transform: capitalize;
+  }
+  i {
+    font-size: 60px;
+    color: $green;
+  }
+}
+.similar-propertie-title {
+  @include potrait {
+  }
+  @include media('<=desktop') {
+    flex-direction: column;
+  }
+}
+.similar {
+  .ban-ad {
+    background-color: $lightgrey;
+    padding: 40px 100px;
+    border-radius: 15px;
+    color: $text-color;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  h1 {
+    text-transform: capitalize;
+    font-size: 32px !important;
+    color: #000000;
+    padding: 30px 0px;
+    @include potrait {
+    }
+    @include media('<=desktop') {
+      font-size: 33px !important;
+    }
+  }
+}
+.property-box {
+  border: 1px solid #e6e6e6;
+
+  cursor: pointer;
+  padding: 32px 30px;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s linear;
+  @include media('<=desktop') {
+  }
+  &:hover {
+    transform: translateY(20px);
+  }
+  .img-box {
+    flex-basis: 30%;
+    @include media('<=desktop') {
+      flex-basis: 50% !important;
+    }
+
+    img {
+      border-radius: 15px;
+      width: 100%;
+      object-fit: cover;
+      transition: all 5s linear;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .caption {
+    .location {
+      img {
+      }
+    }
+    @include media('<=tablet') {
+      padding-top: 10px;
+    }
+    h4 {
+      padding: 7px 0px;
+      text-transform: capitalize;
+      font-size: 20px;
+      background-color: $lightgrey;
+      padding: 10px 40px;
+      color: #5b5b5b;
+      border-radius: 15px;
+    }
+    i {
+      font-size: 18px;
+    }
+    .land {
+      font-size: 14px !important;
+    }
+    span {
+      font-size: 16px !important;
+      color: $text-color;
+      text-transform: capitalize;
+    }
+    .price {
+      padding-top: 22px;
+      .property-price {
+        @include bordernone;
+        background-color: $lightgreen;
+        padding: 10px 30px;
+        text-transform: capitalize;
+        h5 {
+          font-size: 18px;
+        }
+        font-size: 20px;
+        color: $green;
+
+        border-radius: 15px;
+        span {
+          color: $green;
+        }
+      }
+      .lab {
+        font-size: 45px;
+        color: $text-color;
+      }
+      span {
+        color: $text-color;
+      }
+    }
+    h6 {
+      padding: 7px 0px;
+      text-transform: capitalize;
+      font-size: 18px;
+    }
+  }
+  .bed {
+    margin: 10px 0px;
+  }
+}
+
+.update {
+  margin-top: 100px !important;
+  height: 60vh;
+  z-index: 444;
+  position: relative;
+  @include media('<=desktop') {
+    height: 90vh !important;
+  }
+
+  .content-1 {
+    margin-top: 30px;
+  }
+  &::after {
+    content: '';
+    background-color: $lightgrey;
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    top: 0;
+    left: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: -1;
+    @include media('<=desktop') {
+      height: 30%;
+      width: 100%;
+    }
+  }
+  .imges {
+    img {
+      min-height: 400px !important;
+    }
+    border-radius: 15px;
+    padding: 10px 10px;
+    background-color: #fff;
+    box-shadow: 0 0 50px #ccc;
+    width: 350px;
+    top: 19px;
+    left: 150px;
+    position: absolute;
+    text-align: center;
+    @include potrait {
+      left: 0px !important;
+    }
+    @include media('<=desktop') {
+      position: relative !important;
+      top: 1px;
+      left: 139px;
+    }
+    img {
+      min-height: 200px;
+
+      object-fit: cover;
+      border-radius: 15px;
+    }
+  }
+  h1 {
+    font-size: 51px;
+    text-transform: capitalize;
+    @include potrait {
+      font-size: 27px !important ;
+    }
+    @include media('<=tablet') {
+      font-size: 43px;
+    }
+  }
+  p {
+    font-size: 16px;
+    color: #717171;
+    padding: 10px 0px;
+  }
+  .text-field:focus + .place {
+    top: -35px !important;
+  }
+  input {
+    @include bordernone;
+    padding: 20px 18px;
+    width: 70%;
+    @include potrait {
+      width: 100% !important;
+    }
+    text-transform: capitalize;
+    background-color: $lightgrey;
+    border-radius: 20px;
+  }
+  .subscribe {
+    border-radius: 20px;
+    @include bordernone;
+    padding: 20px 20px;
+    text-transform: capitalize;
+    background-color: $green;
+    color: #fff;
+    text-transform: capitalize;
+    margin-left: 10px;
+    @include potrait {
+      margin-top: 30px;
+      padding: 20px 10px !important;
+    }
+    h6 {
+      font-size: 16px;
+      text-transform: capitalize;
+      @include potrait {
+        font-size: 20px;
+      }
+    }
+
+    .lab {
+      font-size: 30px;
+      @include media('<=tablet') {
+        font-size: 22px !important ;
+      }
+    }
+  }
+}
+.content-1 {
+  padding-left: 600px;
+  @include potrait {
+    padding: 10px 17px !important;
+  }
+  @include media('<=desktop') {
+    padding: 1px;
+  }
+}
+.emi-box-1 {
+  margin-top: 110px !important;
+}
+.emi {
+  border-radius: 20px;
+  padding: 34px 35px;
+  .result {
+    text-transform: capitalize;
+  }
+  .emi-box {
+    border-radius: 20px;
+    padding: 18px 20px;
+    background-color: $lightgreen;
+    text-align: center;
+    span {
+      display: block;
+    }
+  }
+  .emi-p {
+    padding-top: 10px;
+    font-size: 14px !important;
+    font-weight: 400;
+    color: #9a9a9a !important;
+  }
+
+  h1 {
+    font-size: 32px;
+    @include media('<=tablet') {
+      font-size: 28px !important;
+    }
+  }
+
+  label {
+    text-transform: capitalize;
+    color: $text-color;
+  }
+  .npr {
+    h6 {
+      font-size: 18px;
+    }
+  }
+  .month {
+    font-size: 15px;
+    padding-right: 27px;
+    text-transform: capitalize;
+    color: $text-color;
+  }
+  .form-select {
+    display: block;
+    @include bordernone;
+    color: $text-color;
+    background-color: #f4f4f4;
+    padding: 10px 17px;
+    border-radius: 10px;
+    text-transform: capitalize;
+  }
+  input {
+    display: block;
+    @include bordernone;
+    color: $text-color;
+    background-color: #f4f4f4;
+    padding: 15px 17px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    width: 100%;
+    //   position: relative;
+    &::after {
+      content: '';
+      width: 10%;
+      height: 30px;
+      position: absolute;
+      background-color: red;
+      top: 0;
+      left: 12px;
+      z-index: 888;
+    }
+  }
+}
+.tranding {
+  h1 {
+    font-size: 32px;
+    text-transform: capitalize;
+    @include media('<=desktop') {
+      font-size: 33px;
+    }
+  }
+
+  .property-box-1 {
+    @include potrait {
+      flex-direction: column;
+    }
+    @include media('<=tablet') {
+    }
+    .img-box {
+      flex-basis: 40%;
+      @include media('<=tablet') {
+        flex-basis: 50%;
+      }
+      img {
+        min-height: 280px;
+        object-fit: cover;
+        @include media('<=tablet') {
+          width: 100%;
+        }
+      }
+    }
+    .caption {
+      flex-basis: 70%;
+      padding: 0px 20px;
+      @include media('<=tablet') {
+        padding: 22px 0px !important;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+.lalpurja {
+  margin-top: 90px !important;
+  h1 {
+    font-size: 42px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+  .lalpurja-content {
+    cursor: pointer;
+    @include media('>=tablet') {
+      &:hover .home-browse {
+        opacity: 1;
+      }
+    }
+
+    i {
+      color: $green;
+      font-size: 60px;
+    }
+    p {
+      color: $text-color;
+      font-size: 16px !important;
+      line-height: 27px;
+      text-align: left;
+    }
+    .home-browse {
+      @include media('>=tablet') {
+        opacity: 0;
+      }
+      margin-top: 20px;
+
+      @include bordernone;
+      background-color: $lightgreen !important;
+      padding: 10px 30px;
+      border-radius: 15px;
+      transition: opacity 0.5s ease-in-out;
+      @include potrait {
+        margin-left: 65px;
+      }
+      h6 {
+        color: $green;
+        font-size: 16px;
+        @include potrait {
+          font-size: 15px;
+        }
+      }
+
+      i {
+        font-size: 30px;
+      }
+    }
+  }
+}
+.ad {
+  @include potrait {
+    margin-top: 167px !important;
+  }
+  @include min-desktop {
+    margin-top: 160px;
+  }
+}

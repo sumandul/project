@@ -1,0 +1,282 @@
+.modal {
+  .form-control {
+    .model-name {
+      background-color: red !important;
+      position: absolute;
+      top: 40px;
+      font-size: 119px !important;
+    }
+  }
+  h5 {
+    font-size: 23px;
+    text-transform: capitalize;
+  }
+  .btn-close {
+    background-color: $lightgrey !important;
+  }
+  .modal-content {
+    padding: 10px 20px;
+    background-color: #ffff;
+  }
+  form {
+    .contact-cancel {
+      background-color: $lightgrey;
+      border-radius: 15px;
+      padding: 10px 20px;
+      a {
+        text-transform: capitalize;
+        font-size: 18px;
+        color: $text-color;
+      }
+    }
+    .contact-submit {
+      background-color: $green;
+      border-radius: 15px;
+      padding: 10px 20px;
+      margin-left: 10px;
+      a {
+        text-transform: capitalize;
+        font-size: 18px;
+        color: #fff;
+      }
+    }
+    padding: 0px 0px !important;
+    .form-select {
+      padding: 20px 40px !important;
+    }
+    .ad-contact {
+      position: relative;
+      .call {
+        position: absolute;
+        top: 21px;
+        left: 14px;
+        font-size: 23px;
+        color: $text-color;
+      }
+    }
+    box-shadow: none !important;
+    .form-control {
+      font-size: 20px;
+      padding: 20px 40px !important;
+    }
+  }
+  background-color: rgba(#026936, 0.4);
+  .modal-header {
+    border-bottom: 0;
+  }
+  .modal-footer {
+    border-top: 0;
+  }
+}
+
+.adverties-banner {
+  .banner {
+    position: relative;
+  }
+
+  .adverties-content {
+    .inner {
+      p {
+        color: $text-color;
+        margin-top: 186px;
+        padding-right: 100px;
+
+        line-height: 28px;
+        font-size: 16px;
+        @include media('<=desktop') {
+          margin-top: 100px;
+          padding-right: 0px;
+        }
+      }
+    }
+
+    .advertise-title {
+      word-spacing: 4px;
+      margin-right: 20px;
+      padding-right: 50px;
+      z-index: 222;
+      position: absolute;
+      left: 0;
+      top: 116px;
+      background-color: #fff;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      @include potrait {
+        top: 76px !important;
+        left: 10px;
+        width: 100%;
+      }
+      @include media('<=desktop') {
+        background-color: transparent;
+        top: 53px;
+        left: 10px;
+      }
+    }
+    h1 {
+      font-size: 64px;
+      letter-spacing: 2px;
+      width: 100%;
+      @include potrait {
+        font-size: 30px !important;
+      }
+      @include media('<=desktop') {
+        font-size: 45px;
+      }
+    }
+  }
+  .adberties-img {
+    min-height: 400px;
+    img {
+      object-fit: cover;
+      height: 100%;
+      border-radius: 15px;
+    }
+  }
+}
+.advertise-img {
+  margin-top: 100px !important;
+}
+.problem {
+  position: relative;
+  &::after {
+    content: '';
+    background-image: linear-gradient(#f2f2f2, #f2f2f200);
+    background-color: $lightgrey;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 38vh;
+    width: 30%;
+    z-index: -1;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  margin-top: 200px;
+  .problem-img {
+    position: relative;
+    .alert {
+      padding: 36px;
+      border-radius: 15px;
+      box-shadow: 2px 10px 40px #00000029 !important;
+      background-color: #ffff;
+      position: absolute;
+      top: -34px;
+      right: 0;
+      i {
+        color: $green;
+        font-size: 56px;
+      }
+    }
+    img {
+      object-fit: cover;
+      border-radius: 15px;
+    }
+  }
+  .problem-content {
+    p {
+      color: $text-color;
+      line-height: 28px;
+      font-size: 16px;
+    }
+
+    h1 {
+      font-size: 48px;
+      width: 80%;
+      @include media('<=desktop') {
+        font-size: 34px;
+        width: 100%;
+      }
+    }
+  }
+}
+.realstate {
+  &::after {
+    width: 0;
+  }
+  margin-top: 100px;
+  h1 {
+    width: 100% !important;
+  }
+}
+.realstate-lead {
+  h1 {
+    width: 100% !important;
+  }
+}
+.leads {
+  h1 {
+    width: 80%;
+    @include media('<=desktop') {
+      font-size: 34px;
+      width: 100% !important;
+    }
+  }
+}
+.corelead {
+  h1 {
+    width: 76% !important;
+  }
+}
+.market {
+  h1 {
+    width: 79%;
+    @include potrait {
+      width: 100% !important;
+    }
+  }
+}
+.adverties-contact {
+  padding: 50px 0px;
+  .ad-contact {
+    background-color: $green;
+    padding: 18px 27px;
+    border-radius: 15px;
+    @include media('<=desktop') {
+      padding: 18px 18px;
+    }
+    a {
+      text-transform: capitalize;
+      color: #ffff;
+      font-size: 20px;
+    }
+  }
+  .contact-content {
+    border-radius: 15px;
+    @include media('<=desktop') {
+      padding: 22px 22px !important;
+    }
+    padding: 22px 60px;
+    background-color: $lightgreen;
+    h1 {
+      font-size: 32px;
+    }
+  }
+}
+.owl-carousel {
+  .item {
+    padding: 20px 19px;
+  }
+}
+
+.sucess {
+  .la-trophy {
+    font-size: 60px;
+    color: $green;
+  }
+  .sucess-content {
+    box-shadow: -3px 6px 40px #72727229 !important;
+    border-radius: 15px;
+    padding: 45px 30px;
+    p {
+      color: $text-color;
+      line-height: 28px;
+      font-size: 16px;
+    }
+    .user-img {
+      img {
+        border-radius: 15px;
+        object-fit: cover;
+      }
+    }
+  }
+}

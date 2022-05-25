@@ -1,0 +1,64 @@
+.modal{
+    h5{
+        font-size: 23px;
+        text-transform: capitalize;
+    }
+    .btn-close{
+        background-color: $lightgrey!important;
+    }
+    .modal-content{
+        padding: 10px 20px;
+        background-color: #ffff;
+    }
+    form{
+        .contact-cancel{
+            background-color: $lightgrey;
+            border-radius: 15px;
+            padding: 10px 20px;
+            a{
+                text-transform: capitalize;
+                font-size: 18px;
+                color: $text-color;
+            }
+        }
+        .contact-submit{
+            background-color: $green;
+            border-radius: 15px;
+            padding: 10px 20px;
+            margin-left: 10px;
+            a{
+                text-transform: capitalize;
+                font-size: 18px;
+                color: #fff;
+            }
+        }
+        padding: 0px 0px!important;
+        .form-select{
+            padding: 20px 40px!important;
+        }
+        .ad-contact{
+            position: relative;
+            .las{
+              position: absolute;
+              top: 21px;
+              left: 10px;
+              font-size: 23px;
+              color: $text-color;
+            }
+        }
+       box-shadow: none!important;
+    .form-control{
+        font-size: 20px;
+        padding: 20px 40px!important;
+       
+    }
+
+    }
+    background-color:rgba(#026936,0.4);
+    .modal-header{
+        border-bottom: 0;
+    }
+    .modal-footer{
+        border-top: 0;
+    }
+}

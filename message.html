@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="keywords" content="Keywords" />
+    <meta name="description" content="Description" />
+    <meta name="title" property="og:title" content="Title" />
+    <meta property="og:type" content="website" />
+    <meta name="description" property="og:description" content="detail" key="ogdesc" />
+    <meta property="og:site_name" content="AOC" key="ogsitename" />
+    <meta property="og:url" content="https://aoc.com" key="ogurl" />
+    <meta name="application-name" content="aoc" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="aoc" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="msapplication-config" content="/static/icons/browserconfig.xml" />
+    <meta name="msapplication-TileColor" content="#800000" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="theme-color" content="#800000" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/media/logo.png" />
+    <link rel="icon" type="image/svg" sizes="16x16" href="/media/load-svg.svg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="https://aoc.com.np/" />
+    <meta name="twitter:title" content="aoc" />
+    <meta name="twitter:description" content="desc" />
+    <meta name="twitter:image" content="/imageurl" />
+    <meta name="twitter:creator" content="@aoc" />
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendors/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/vendors/aos/aos.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+<section class="property-wrapper">
+  <!-- Button trigger modal -->
+  <div id="myModal" class="modal fade">
+    <div class="modal-dialog modal-confirm">
+      <div class="modal-content">
+        <div class="modal-header flex-column">
+          <div class="icon-box">
+            <i class="material-icons">&#xE5CD;</i>
+          </div>						
+          <h4 class="modal-title w-100">Are you sure?</h4>	
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Do you really want to delete these records? This process cannot be undone.</p>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="row">
+        <div class="col-12 text-end pe-4">
+          <button type="button" class="btn-close py-3 px-4" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      </div>      
+      <div class="modal-body">
+       <h6> we're Here to help you.</h6>
+       <div class="form-check my-2">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">
+         <p class="text_p"> I accept term and condition</p>
+        </label>
+      </div>
+     <div class="row">
+       <div class="col-12 text-end">
+        <button type="button" class="btn  help "><a href="">Send Help</a></button>
+       </div>
+     </div>
+      </div>
+          
+       
+       
+      </div> 
+    </div>
+  </div>
+</div>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <div class="container-fluid px-5">
+      <a class="navbar-brand" href="index.html"><img src="assets/img/Original.png" alt="" class="img-fluid"  style="width: 160px ; "></a>
+      <button type="button" class="btn btn-success btn-hover btn_a add-btn-mobile"><a href="addproperty.html" class="d-flex justify-content-center align-items-center  "> <i class="las la-plus me-2"></i>Add listing</a></button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <i class="las la-bars"></i>
+
+  </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto align-items-center mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link  " aria-current="page" href="listingshow.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="land.html">land</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="rent.html">rent</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="adverties.html">advertise</a>
+          </li>
+            <li class="nav-item ">
+        <a href="login.html" class="nav-link">login in</a>
+            </li>
+            <li class="nav-item">
+              <a href="signup.html" class="nav-link">sign in</a>
+                  </li>
+                  <li class="nav-item add-btn-hide">
+                    <button type="button" class="btn btn-success btn-hover btn_a"><a href="addproperty.html" class="d-flex justify-content-center align-items-center  "> <img src="./assets/img/Fill 4.svg" class="me-2 " alt="" class="svg-icon"> Add listing</a></button>
+                        </li>
+                  
+        </ul>
+       
+       
+  <span></span>
+      </div>
+    </div>
+  </nav>
+</header>
+      <section class="add py-5">
+            <div class="container-fluid px-5">
+                <div class="row gx-5">
+                  <div class="col-sm-6 col-md-12 col-lg-3 fix-dashboard">
+
+
+                    <div class="user-dashboard-profile ">
+                        <div class="user-profile-dashboard d-flex align-items-center justify-content-between">
+                            <div class="img-box d-flex align-items-center justify-content-center">
+
+                                <img src='https://picsum.photos/50/50' alt="" class="img-fluid">
+                                <div class="property-owner ps-2">
+                                    <h6>suman dulal</h6>
+                                    <p>owner</p>
+                                </div>
+                            </div>
+                            <div class="down-arrow-icon">
+
+                                <a href="editprofile.html"><img src="./assets/img/Combined Shape.svg" class="me-3"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-dashboard">
+                        <ul class="d-flex align-items-center justify-content-around">
+                            <li> <a href=""> <img src="./assets/img/Iconly-Bulk-Chart.svg" style="width: 30px;"
+                                        alt=""></a></li>
+                            <li><a href="addnew.html"> <img src="./assets/img/Iconly-Bulk-Home.svg"
+                                        style="width: 30px;" alt=""> </a></li>
+                            <li> <img src="./assets/img/Iconly-Bulk-Heart.svg" style="width: 30px;" alt=""> <a
+                                    href=""></a></li>
+                            <li> <a href="alllead.html"><img src="./assets/img/37.svg" alt="" style="width: 30px;"></a>
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+                    <div class="user-setting">
+                        <div class="icon d-flex align-items-center">
+                            <img src="./assets/img/Iconly-Bulk-Chart.svg" class="me-2 svg-icon" alt="">
+                            <h6>My Dashboard</h6>
+                        </div>
+                        <div class="icon d-flex align-items-center mt-4">
+                            <img src="./assets/img/Iconly-Bulk-Home.svg" class="me-2" alt="">
+                            <a href="addnew.html">
+                                <h6> Properties</h6>
+                            </a>
+                        </div>
+                        <div class="icon d-flex align-items-center mt-4">
+
+                            <img src="./assets/img/Iconly-Bulk-Heart.svg" class="me-2" alt="">
+                            <a href="saveproperty.html">
+                                <h6> Save Properties</h6>
+                            </a>
+                        </div>
+                        <div class="icon d-flex align-items-center mt-4">
+                            <img src="./assets/img/37.svg" class="me-2" alt="">
+                            <a href="alllead.html">
+                                <h6> Leads</h6>
+                            </a>
+                        </div>
+                        <div class="icon  active  d-flex align-items-center mt-4">
+                          <i class="las la-comments"></i>
+                          <a href="alllead.html">
+                              <h6> message</h6>
+                          </a>
+                      </div>
+                        <div class="icon d-flex align-items-center mt-4">
+                            <img src="./assets/img/Iconly-Bulk-Wallet.svg" class="me-2" alt="">
+                            <h6>Accounts & Finance</h6>
+                        </div>
+                        <div class="user-ad mt-5">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="ads mt-2"
+                                        style="min-height: 110px; width: 230px; background-image: url('https://picsum.photos/600/200'); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 15px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="logout d-flex align-items-center">
+
+                            <img src="./assets/img/Iconly-Bulk-Logout.svg" class="me-2" alt="">
+                            <h6><a href="">Log Out</a></h6>
+                        </div>
+                    </div>
+
+                </div>
+                    <div class="col-sm-9 addnew   lead-table" style="background-color: #fff;">
+                       <div class="">
+                          
+
+                           <div class="d-flex align-items-center title">
+                            <a href="addproperty.html"> <button class="btn back"> <img src="./assets/img/Arrow - Right.svg" alt="" class="me-3"
+                              style="transform: rotate(180deg);">Back</button></a>
+                               <h5 class="ms-5">Add Lead</h5>
+                           </div>
+                           <div>
+                        
+                             <div class="properrty-id mt-5">
+                               <h4>Property ID : <span>4322</span> </h4>
+                             </div>
+
+                             <table class="table mt-5">
+                              <thead style="border-bottom: 0!important;">
+                                <tr>
+                             
+                                  <th scope="col">Name</th>
+                                  <th scope="col">E-Mail</th>
+                                  <th scope="col">Phone</th>
+                                  <th scope="col" >Action</th>
+                                 
+                                
+                               
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr class="tb-row" >
+                                  <td  class="name"> <img src="./assets/img/Profile.svg" class="me-1" alt="">
+                                    Bishnu Adhikari</td>
+                                  <td> <img src="./assets/img/Group.svg" class="me-1"  alt=""> adhbishnu35@gmail.com</td>
+                                  <td> <img src="./assets/img/Call.svg" class="me-1"  alt=""> 9856145756</td>
+                            
+                                    <td class="td-down" > 
+                                      <div class="drop-box text-center"  >
+                                      <img src="./assets/img/Combined Shape.svg" alt="">
+                                      <div class="box-1" >
+                               <div>
+                                <button class="btn-add-core btn  "><a href="listlead.html"> Add message </a></button>
+                               </div>
+                                       <div>
+                                        <button class=" active btn-add-core btn remove-btn"><a href="">Reply</a></button>
+                                       </div>
+                                    </div>
+                                      </div>  
+                                    </td>
+                                </tr>
+                                <tr class="tb-row" >
+                                  <td  class="name"> <img src="./assets/img/Profile.svg" class="me-1" alt="">
+                                    Bishnu Adhikari</td>
+                                  <td> <img src="./assets/img/Group.svg" class="me-1"  alt=""> adhbishnu35@gmail.com</td>
+                                  <td> <img src="./assets/img/Call.svg" class="me-1"  alt=""> 9856145756</td>
+                            
+                                    <td class="td-down" > 
+                                      <div class="drop-box text-center" onclick="hidemenu()"  >
+                                      <img src="./assets/img/Combined Shape.svg" alt="">
+                                      <div class="box-1" >
+                               <div>
+                                <button class="btn-add-core btn  "><a href="listlead.html">Add   to Core Leads</a></button>
+                               </div>
+                                       <div>
+                                        <button class=" active btn-add-core btn remove-btn"><a href="">Remove</a></button>
+                                       </div>
+                                    </div>
+                                      </div>  
+                                    </td>
+                                </tr>
+                                <tr class="tb-row" >
+                                  <td  class="name"> <img src="./assets/img/Profile.svg" class="me-1" alt="">
+                                    Bishnu Adhikari</td>
+                                  <td> <img src="./assets/img/Group.svg" class="me-1"  alt=""> adhbishnu35@gmail.com</td>
+                                  <td> <img src="./assets/img/Call.svg" class="me-1"  alt=""> 9856145756</td>
+                            
+                                    <td class="td-down" > 
+                                      <div class="drop-box text-center" onclick="hidemenu()"  >
+                                      <img src="./assets/img/Combined Shape.svg" alt="">
+                                      <div class="box-1" >
+                               <div>
+                                <button class="btn-add-core btn  "><a href="listlead.html">Add   to Core Leads</a></button>
+                               </div>
+                                       <div>
+                                        <button class=" active btn-add-core btn remove-btn"><a href="">Remove</a></button>
+                                       </div>
+                                    </div>
+                                      </div>  
+                                    </td>
+                                </tr>
+                                <tr class="tb-row" >
+                                  <td  class="name"> <img src="./assets/img/Profile.svg" class="me-1" alt="">
+                                    Bishnu Adhikari</td>
+                                  <td> <img src="./assets/img/Group.svg" class="me-1"  alt=""> adhbishnu35@gmail.com</td>
+                                  <td> <img src="./assets/img/Call.svg" class="me-1"  alt=""> 9856145756</td>
+                            
+                                    <td class="td-down" > 
+                                      <div class="drop-box text-center" onclick="hidemenu()"  >
+                                      <img src="./assets/img/Combined Shape.svg" alt="">
+                                      <div class="box-1" >
+                               <div>
+                                <button class="btn-add-core btn  "><a href="listlead.html">Add   to Core Leads</a></button>
+                               </div>
+                                       <div>
+                                        <button class=" active btn-add-core btn remove-btn"><a href="">Remove</a></button>
+                                       </div>
+                                    </div>
+                                      </div>  
+                                    </td>
+                                </tr>
+                                
+                              </tbody>
+                            </table>
+                </div>
+            </div>
+      </section>
+</section>
+  
+    <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/owl/owl.carousel.min.js text"></script>
+    <script src="assets/vendors/aos/aos.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

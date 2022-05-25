@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lalpurja</title>
+    <meta name="keywords" content="Keywords" />
+    <meta name="description" content="Description" />
+    <meta name="title" property="og:title" content="Title" />
+    <meta property="og:type" content="website" />
+    <meta name="description" property="og:description" content="detail" key="ogdesc" />
+    <meta property="og:site_name" content="AOC" key="ogsitename" />
+    <meta property="og:url" content="https://aoc.com" key="ogurl" />
+    <meta name="application-name" content="aoc" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="aoc" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="msapplication-config" content="/static/icons/browserconfig.xml" />
+    <meta name="msapplication-TileColor" content="#800000" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="theme-color" content="#800000" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/media/logo.png" />
+    <link rel="icon" type="image/svg" sizes="16x16" href="/media/load-svg.svg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="https://aoc.com.np/" />
+    <meta name="twitter:title" content="aoc" />
+    <meta name="twitter:description" content="desc" />
+    <meta name="twitter:image" content="/imageurl" />
+    <meta name="twitter:creator" content="@aoc" />
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
+    <link rel="stylesheet" href="assets/vendors/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/vendors/aos/aos.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+</head>
+
+<body>
+
+  <div class="body-wrapper">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+        <div class="container-fluid px-5">
+          <a class="navbar-brand" href="index.html"><img src="assets/img/Original.png" alt="" class="img-fluid" style="width: 160px ; "></a>
+          <button type="button" class="btn btn-success btn-hover btn_a add-btn-mobile"><a href="addproperty.html" class="d-flex justify-content-center align-items-center  "> <i class="las la-plus me-2"></i>Add listing</a></button>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <i class="las la-bars"></i>
+
+      </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto align-items-center mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link  " aria-current="page" href="sellhome.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="buyhomeland.html">land</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="rent.html">rent</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="adverties.html">advertise</a>
+              </li>
+                <li class="nav-item ">
+            <a href="login.html" class="nav-link">login in</a>
+                </li>
+                <li class="nav-item">
+                  <a href="signup.html" class="nav-link">sign in</a>
+                      </li>
+                      <li class="nav-item add-btn-hide">
+                        <button type="button" class="btn btn-success btn-hover btn_a"><a href="addproperty.html" class="d-flex justify-content-center align-items-center  "> <img src="./assets/img/Fill 4.svg" class="me-2 " alt="" class="svg-icon"> Add listing</a></button>
+                            </li>
+                      
+            </ul>
+           
+           
+      <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+ 
+    <section class="banner-top">
+          <div class="container banner" >
+             <div class="banner-content d-flex">
+                <div class="banner-title">
+                <div class="banner-inner">
+                <div class="">
+                  <span class="text_p sub-title text-capitalize ">best real state</span>
+                                <h1 class="">
+                 <span class="pb-3" style="z-index: 1111;"> LetS find your</span> <br>
+              <span class="sub-title-1 "> Dream properties  at </span> <br>
+             Best location!
+            </h1>
+               </div>
+                </div>
+      
+                  <div class="banner-input-section"  data-aos="fade-right"
+                  data-aos-duration="2000" 
+                  > 
+                  <span><p class="text_p pt-4 pb-2">search for what you're here for</p></span>
+                    <ul class="nav nav-pills  " id="pills-tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><h5>Home</h5></button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><h5>Land</h5></button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-rent-tab" data-bs-toggle="pill" data-bs-target="#pills-rent" type="button" role="tab" aria-controls="pills-profile rent" aria-selected="false"><h5>Rent</h5></button>
+                      </li>
+                    
+                    </ul>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="tab" >
+                          <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                               
+                              <div class="row gy-4">
+                                <div class=" col-sm-9" >
+                                <div class="user-input">
+                                
+                                  <input type="text"  class="text-field  login-name" />
+                                  <label for="" class="place label-name"><p class="text_p label-p">Enter an address, town or property</p></label>
+                                </div>
+                                </div>
+                                <div class=" col-sm-3 text-center" >
+                                 <button class="search-btn btn-hover btn_a  d-flex justify-content-center align-items-center"><img src="./assets/img/Iconly-Bulk-Search.svg" class="me-2" alt=""><h6>search</h6></button>
+                                </div>
+                              </div>
+                                
+                              </div>
+                            </div>
+                         
+                          </div>
+                      </div>
+                    </div>
+                </div>
+              
+             </div>
+         
+           <div class="banner-img" >
+            <img src="https://images.pexels.com/photos/9760216/pexels-photo-9760216.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""  class="img-fluid">
+           </div>
+          </div>
+        </div>
+    </section>
+<section class="banner-botton mt-5">
+<div class="container">
+ <div class="row gx-5 gy-5"
+ data-aos="fade-right"
+                  data-aos-duration="2000"
+                  data-aos-delay="200"
+                  data-aos-interval="200"
+ >
+   <div class=" col-6 col-md-6 col-lg-3">
+    <div class="d-flex icon-content justify-content-center align-items-center py-3 " >
+      
+      <img src="./assets/img/Graph.svg" class="me-3" alt="" >
+         <a href="listingshow.html">
+          <div class="text">
+            <span><h5>land</h5></span>
+            <p class="text_p">
+              69 listing
+            </p>
+          </div>
+        </a>
+        
+     
+     </div>
+  
+   </div>
+   <div class=" col-6  col-md-6 col-lg-3">
+    <div class="d-flex icon-content justify-content-center align-items-center py-3">
+       <img src="./assets/img/1/36.svg" style="width: 50px;" class="me-3" alt="">
+       <a href="listingshow.html">
+          <div class="text">
+            <span><h5>home</h5></span>
+            <p class="text_p">
+              76listing
+            </p>
+          </div>
+        </a>
+     
+     </div>
+  
+   </div>
+   <div class=" col-6 col-md-6 col-lg-3">
+    <div class="d-flex icon-content justify-content-center align-items-center py-3 ">
+        <img src="./assets/img/Group 51.svg"  class="me-3" alt="">
+        <a href="listingshow.html">
+          <div class="text">
+            <span><h5>business</h5></span>
+            <p class="text_p">
+              112 listing
+            </p>
+          </div>
+        </a>
+     
+     </div>
+  
+   </div>
+   <div class=" col-6 col-md-6 col-lg-3">
+    <div class="d-flex icon-content justify-content-center align-items-center  py-3">
+      <img src="./assets/img/residential-block.svg"  class="me-3" alt="">
+      <a href="listingshow.html">
+          <div class="text">
+            <span><h5>apartment</h5></span>
+            <p class="text_p">
+              45 listing
+            </p>
+          </div>
+        </a>
+     </div>
+  
+   </div>
+ </div>     
+</div>
+</section>
+<section class="similar mt-5">
+<div class="container">
+  <div class="similar-propertie-title d-flex justify-content-between align-items-center py-5 
+  ">
+    <h1>poppular properties right now</h1> 
+    <div class="ban-ad">
+      <h6>Banner ADS</h6>
+    </div>
+  
+<a href="listingshow.html"> <button class="btn view d-flex align-items-center ms-5"><h6>view all </h6><img src="./assets/img/Arrow - Right.svg" class="ms-3" alt=""></button></a>
+</div>
+   
+<!-- <div class="tablet-view-hide d-flex justify-content-between align-items-center">
+<div class="ban-ad">
+<h6>Banner ADS</h6>
+</div>
+<a href="listingshow.html"> <button class="btn view d-flex align-items-center ms-5"><h6>view all </h6><img src="./assets/img/Arrow - Right.svg" class="ms-3" alt=""></button></a>
+</div> -->
+
+
+<!-- <div class="d-flex align-items-center justify-content-between tablet-view">
+<div class="mb-5 ">
+<h6>Banner ADS</h6>
+</div>
+<a href="listingshow.html">  <button class="btn view  d-flex align-items-center  "><h6>view all<img src="./assets/img/Arrow - Right.svg" class="ms-3" alt=""></h6></button></a> 
+</div> -->
+  
+  <div class="row  gy-5">
+   
+   <div class=" col-sm-6  col-lg-4 ">
+    <div class="property-box">
+        <a href="property.html">
+          <div class="img">
+            <img src='https://picsum.photos/600/400' alt="" class="img-fluid">
+          </div>
+        </a>
+         <div class="">
+           <h6 class="new">New</h6>
+         </div>
+         <img src="./assets/img/Group 641.svg" class="mark" alt="">
+         <div class="caption pt-3">
+           <span class="land">LAND</span>
+           <h6 class="pt-2">3-4 Beds , 2 Bathroom Apartment</h6>
+           <span class="location">  <img src="./assets/img/Iconly-Bulk-Location.svg" alt="" class="svg-img-color"> jasikhel lalitpur</span> <br>
+           <div class="d-flex justify-content-between pt-3">
+             <span class=" "> <img src="./assets/img/Icon ionic-ios-bed.svg" alt=""  class="svg-img-color"> 5 bed</span> <span class=""> <img src="./assets/img/assembly-area.svg" alt=""  class="svg-img-color"> area 1200 sq.km(A)</span>
+           </div>
+           <div class="d-flex justify-content-between pt-3">
+             <span class=""> <img src="./assets/img/Icon awesome-bath.svg" alt=""  class="svg-img-color">  5 bathrooms</span> <span class=""> <img src="./assets/img/Icon awesome-clock.svg" alt=""  class="svg-img-color"> 9 minutes ago</span>
+           </div>
+          
+           <div class="price d-flex justify-content-between">
+             <button class="property-price d-flex"><h5>rs 70,000</h5> <span>/per year</span> </button>
+        <img src="./assets/img/Heart.svg" alt="">
+           </div>
+         </div>
+    </div>
+  </div>
+  <div class="  col-sm-6 col-lg-4 ">
+    <div class="property-box">
+      <a href="property.html">
+        <div class="img">
+          <img src='https://picsum.photos/600/400' alt="" class="img-fluid">
+        </div>
+      </a>
+         <div class="new">
+           FULLY FURNISHED
+     
+         </div>
+         <img src="./assets/img/Group 641.svg" class="mark" alt="">
+         <div class="caption pt-3">
+          <span  class="land">HOUSE</span>
+          <h6 class="pt-2">Minimal Housing</h6>
+          <span class="location">  <img src="./assets/img/Iconly-Bulk-Location.svg" alt="" class="svg-img-color"> jasikhel lalitpur</span> <br>
+          <div class="d-flex justify-content-between pt-3">
+            <span class=" "> <img src="./assets/img/Icon ionic-ios-bed.svg" alt=""  class="svg-img-color"> 5 bed</span> <span class=""> <img src="./assets/img/assembly-area.svg" alt=""  class="svg-img-color"> area 1200 sq.km(A)</span>
+          </div>
+          <div class="d-flex justify-content-between pt-3">
+            <span class=""> <img src="./assets/img/Icon awesome-bath.svg" alt=""  class="svg-img-color">  5 bathrooms</span> <span class=""> <img src="./assets/img/Icon awesome-clock.svg" alt=""  class="svg-img-color"> 9 minutes ago</span>
+          </div>
+         
+          <div class="price d-flex justify-content-between">
+            <button class="property-price d-flex"><h5>rs 70,000</h5> <span>/per year</span> </button>
+       <img src="./assets/img/Heart.svg" alt="">
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class=" col-sm-6 col-lg-4 ">
+    <div class="property-box">
+      <a href="property.html">
+        <div class="img">
+          <img src='https://picsum.photos/600/400' alt="" class="img-fluid">
+        </div>
+      </a>
+         
+         <div class="caption pt-3">
+          <span class="land">RENT</span>
+           <div class="d-flex align-items-center justify-content-between">
+            <h6 class="pt-2">Minimal Housing</h6>
+            <h4 >ADS</h4>
+           </div>
+          <span class="location">  <img src="./assets/img/Iconly-Bulk-Location.svg" alt="" class="svg-img-color"> jasikhel lalitpur</span> <br>
+          <div class="d-flex justify-content-between pt-3">
+            <span class=" "> <img src="./assets/img/Icon ionic-ios-bed.svg" alt=""  class="svg-img-color"> 5 bed</span> <span class=""> <img src="./assets/img/assembly-area.svg" alt=""  class="svg-img-color"> area 1200 sq.km(A)</span>
+          </div>
+          <div class="d-flex justify-content-between pt-3">
+            <span class=""> <img src="./assets/img/Icon awesome-bath.svg" alt=""  class="svg-img-color">  5 bathrooms</span> <span class=""> <img src="./assets/img/Icon awesome-clock.svg" alt=""  class="svg-img-color"> 9 minutes ago</span>
+          </div>
+         
+          <div class="price d-flex justify-content-between">
+            <button class="property-price d-flex"><h5>rs 70,000</h5> <span>/per year</span> </button>
+       <img src="./assets/img/Heart.svg" alt="">
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class=" col-sm-6 col-lg-4 ">
+    <div class="property-box">
+      <a href="property.html">
+        <div class="img">
+          <img src='https://picsum.photos/600/400' alt="" class="img-fluid">
+        </div>
+      </a>
+       
+         <div class="caption pt-3">
+          <span class="land">LAND</span>
+          <h6 class="pt-2">Minimal Housing</h6>
+          <span class="location">  <img src="./assets/img/Iconly-Bulk-Location.svg" alt="" class="svg-img-color"> jasikhel lalitpur</span> <br>
+          <div class="d-flex justify-content-between pt-3">
+            <span class=" "> <img src="./assets/img/Icon ionic-ios-bed.svg" alt=""  class="svg-img-color"> 5 bed</span> <span class=""> <img src="./assets/img/assembly-area.svg" alt=""  class="svg-img-color"> area 1200 sq.km(A)</span>
+          </div>
+          <div class="d-flex justify-content-between pt-3">
+            <span class=""> <img src="./assets/img/Icon awesome-bath.svg" alt=""  class="svg-img-color">  5 bathrooms</span> <span class=""> <img src="./assets/img/Icon awesome-clock.svg" alt=""  class="svg-img-color"> 9 minutes ago</span>
+          </div>
+         
+          <div class="price d-flex justify-content-between">
+            <button class="property-price d-flex"><h5>rs 70,000</h5> <span>/per year</span> </button>
+       <img src="./assets/img/Heart.svg" alt="">
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class=" col-sm-6 col-lg-4 ">
+    <div class="property-box">
+      <a href="property.html">
+        <div class="img">
+          <img src='https://picsum.photos/600/400' alt="" class="img-fluid">
+        </div>
+      </a>
+         <div class="new">
+           new
+         </div>
+         <div class="caption pt-3">
+          <span class="land">HOUSE</span>
+          <h6 class="pt-2">Minimal Housing</h6>
+          <span class="location">  <img src="./assets/img/Iconly-Bulk-Location.svg" alt="" class="svg-img-color"> jasikhel lalitpur</span> <br>
+          <div class="d-flex justify-content-between pt-3">
+            <span class=" "> <img src="./assets/img/Icon ionic-ios-bed.svg" alt=""  class="svg-img-color"> 5 bed</span> <span class=""> <img src="./assets/img/assembly-area.svg" alt=""  class="svg-img-color"> area 1200 sq.km(A)</span>
+          </div>
+          <div class="d-flex justify-content-between pt-3">
+            <span class=""> <img src="./assets/img/Icon awesome-bath.svg" alt=""  class="svg-img-color">  5 bathrooms</span> <span class=""> <img src="./assets/img/Icon awesome-clock.svg" alt=""  class="svg-img-color"> 9 minutes ago</span>
+          </div>
+         
+          <div class="price d-flex justify-content-between">
+            <button class="property-price d-flex"><h5>rs 70,000</h5> <span>/per year</span> </button>
+       <img src="./assets/img/Heart.svg" alt="">
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-4 ">
+    <div class="property-box">
+      <a href="property.html">
+        <div class="img">
+          <img src='https://picsum.photos/600/400' alt="" class="img-fluid">
+        </div>
+      </a>
+         <div class="new">
+           new
+         </div>
+         <div class="caption pt-3">
+          <span class="land">RENT</span>
+          <h6 class="pt-2">Minimal Housing</h6>
+          <span class="location">  <img src="./assets/img/Iconly-Bulk-Location.svg" alt="" class="svg-img-color"> jasikhel lalitpur</span> <br>
+          <div class="d-flex justify-content-between pt-3">
+            <span class=" "> <img src="./assets/img/Icon ionic-ios-bed.svg" alt=""  class="svg-img-color"> 5 bed</span> <span class=""> <img src="./assets/img/assembly-area.svg" alt=""  class="svg-img-color"> area 1200 sq.km(A)</span>
+          </div>
+          <div class="d-flex justify-content-between pt-3">
+            <span class=""> <img src="./assets/img/Icon awesome-bath.svg" alt=""  class="svg-img-color">  5 bathrooms</span> <span class=""> <img src="./assets/img/Icon awesome-clock.svg" alt=""  class="svg-img-color"> 9 minutes ago</span>
+          </div>
+         
+          <div class="price d-flex justify-content-between">
+            <button class="property-price d-flex"><h5>rs 70,000</h5> <span>/per year</span> </button>
+       <img src="./assets/img/Heart.svg" alt="">
+          </div>
+        </div>
+    </div>
+  </div>
+
+    <div class=" col-sm-6 col-lg-4 ">
+      <div class="property-box">
+        <a href="property.html">
+          <div class="img">
+            <img src='https://picsum.photos/600/400' alt="" class="img-fluid">
+          </div>
+        </a>
+         
+           <div class="caption pt-3">
+            <span class="land">LAND</span>
+            <h6 class="pt-2">Minimal Housing</h6>
+            <span class="location">  <img src="./assets/img/Iconly-Bulk-Location.svg" alt="" class="svg-img-color"> jasikhel lalitpur</span> <br>
+            <div class="d-flex justify-content-between pt-3">
+              <span class=" "> <img src="./assets/img/Icon ionic-ios-bed.svg" alt=""  class="svg-img-color"> 5 bed</span> <span class=""> <img src="./assets/img/assembly-area.svg" alt=""  class="svg-img-color"> area 1200 sq.km(A)</span>
+            </div>
+            <div class="d-flex justify-content-between pt-3">
+              <span class=""> <img src="./assets/img/Icon awesome-bath.svg" alt=""  class="svg-img-color">  5 bathrooms</span> <span class=""> <img src="./assets/img/Icon awesome-clock.svg" alt=""  class="svg-img-color"> 9 minutes ago</span>
+            </div>
+           
+            <div class="price d-flex justify-content-between">
+              <button class="property-price d-flex"><h5>rs 70,000</h5> <span>/per year</span> </button>
+         <img src="./assets/img/Heart.svg" alt="">
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class=" col-sm-6 col-lg-4 ">
+      <div class="property-box">
+        <a href="property.html">
+          <div class="img">
+            <img src='https://picsum.photos/600/400' alt="" class="img-fluid">
+          </div>
+        </a>
+           <div class="new">
+             new
+           </div>
+           <div class="caption pt-3">
+            <span class="land">HOUSE</span>
+            <h6 class="pt-2">Minimal Housing</h6>
+            <span class="location">  <img src="./assets/img/Iconly-Bulk-Location.svg" alt="" class="svg-img-color"> jasikhel lalitpur</span> <br>
+            <div class="d-flex justify-content-between pt-3">
+              <span class=" "> <img src="./assets/img/Icon ionic-ios-bed.svg" alt=""  class="svg-img-color"> 5 bed</span> <span class=""> <img src="./assets/img/assembly-area.svg" alt=""  class="svg-img-color"> area 1200 sq.km(A)</span>
+            </div>
+            <div class="d-flex justify-content-between pt-3">
+              <span class=""> <img src="./assets/img/Icon awesome-bath.svg" alt=""  class="svg-img-color">  5 bathrooms</span> <span class=""> <img src="./assets/img/Icon awesome-clock.svg" alt=""  class="svg-img-color"> 9 minutes ago</span>
+            </div>
+           
+            <div class="price d-flex justify-content-between">
+              <button class="property-price d-flex"><h5>rs 70,000</h5> <span>/per year</span> </button>
+         <img src="./assets/img/Heart.svg" alt="">
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-4 ">
+      <div class="property-box">
+        <a href="property.html">
+          <div class="img">
+            <img src='https://picsum.photos/600/400' alt="" class="img-fluid">
+          </div>
+        </a>
+           <div class="new">
+             new
+           </div>
+           <div class="caption pt-3">
+            <span class="land">RENT</span>
+            <h6 class="pt-2">Minimal Housing</h6>
+            <span class="location">  <img src="./assets/img/Iconly-Bulk-Location.svg" alt="" class="svg-img-color"> jasikhel lalitpur</span> <br>
+            <div class="d-flex justify-content-between pt-3">
+              <span class=" "> <img src="./assets/img/Icon ionic-ios-bed.svg" alt=""  class="svg-img-color"> 5 bed</span> <span class=""> <img src="./assets/img/assembly-area.svg" alt=""  class="svg-img-color"> area 1200 sq.km(A)</span>
+            </div>
+            <div class="d-flex justify-content-between pt-3">
+              <span class=""> <img src="./assets/img/Icon awesome-bath.svg" alt=""  class="svg-img-color">  5 bathrooms</span> <span class=""> <img src="./assets/img/Icon awesome-clock.svg" alt=""  class="svg-img-color"> 9 minutes ago</span>
+            </div>
+           
+            <div class="price d-flex justify-content-between">
+              <button class="property-price d-flex"><h5>rs 70,000</h5> <span>/per year</span> </button>
+         <img src="./assets/img/Heart.svg" alt="">
+            </div>
+          </div>
+      </div>
+    </div>
+   </div> 
+</div>
+</section>
+<section class="ad my-5">
+<div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="ads mt-2" style="min-height: 180px; background-image: url('https://picsum.photos/600/200'); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 15px;"></div>
+      </div>
+    </div>
+   
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="tranding my-5">
+ <div class="container">
+   <div class="d-flex align-items-center justify-content-between py-4 tranding-view" >
+    <h1 class="">trending properties</h1>
+    <a href="listingshow.html">  <button class="btn view  d-flex align-items-center  "><h6>view all</h6><img src="./assets/img/Arrow - Right.svg" class="ms-3" alt=""></button></a> 
+   </div>
+
+  <div class="row gy-4 gx-4"> 
+    <div class=" col-sm-12  col-lg-6 ">
+      <div class="property-box  property-box-1 d-flex ">
+       <div class="img-box" style="overflow: hidden;">
+        <a href="property.html">
+          <img src="./assets/img/Image 18.png" alt="" class="img-fluid" >
+        </a>
+       </div>
+       <div class="caption pt-3">
+        <h6 class="pt-2">9 Aana Land</h6>
+        <span class="location">  <img src="./assets/img/Iconly-Bulk-Location.svg" alt="" class="svg-img-color"> jasikhel lalitpur</span> <br>
+        <div class="d-flex justify-content-between pt-3">
+          <span class=" "> <img src="./assets/img/Icon ionic-ios-bed.svg" alt=""  class="svg-img-color"> 5 bed</span> <span class=""> <img src="./assets/img/assembly-area.svg" alt=""  class="svg-img-color"> area 1200 sq.km(A)</span>
+        </div>
+        <div class="d-flex justify-content-between pt-3">
+          <span class=""> <img src="./assets/img/Icon awesome-bath.svg" alt=""  class="svg-img-color">  5 bathrooms</span> <span class=""> <img src="./assets/img/Icon awesome-clock.svg" alt=""  class="svg-img-color"> 9 minutes ago</span>
+        </div>
+       
+        <div class="price d-flex justify-content-between">
+          <button class="property-price d-flex"><h5>rs 70,000</h5> <span>/per year</span> </button>
+     <img src="./assets/img/Heart.svg" alt="">
+        </div>
+      </div>
+      </div>
+   </div>
+   <div class="col-sm-12   col-lg-6">
+    <div class="property-box  property-box-1 d-flex">
+     <div class="img-box" style="overflow: hidden;">
+      <a href="property.html">
+        <img src="./assets/img/Image 18.png" alt="" class="img-fluid" style="flex-basis:20% ;">
+      </a>
+     </div>
+     <div class="caption pt-3">
+      <h6 class="pt-2">House in 5 Aana Land</h6>
+      <span class="location">  <img src="./assets/img/Iconly-Bulk-Location.svg" alt="" class="svg-img-color"> jasikhel lalitpur</span> <br>
+      <div class="d-flex justify-content-between pt-3">
+        <span class=" "> <img src="./assets/img/Icon ionic-ios-bed.svg" alt=""  class="svg-img-color"> 5 bed</span> <span class=""> <img src="./assets/img/assembly-area.svg" alt=""  class="svg-img-color"> area 1200 sq.km(A)</span>
+      </div>
+      <div class="d-flex justify-content-between pt-3">
+        <span class=""> <img src="./assets/img/Icon awesome-bath.svg" alt=""  class="svg-img-color">  5 bathrooms</span> <span class=""> <img src="./assets/img/Icon awesome-clock.svg" alt=""  class="svg-img-color"> 9 minutes ago</span>
+      </div>
+     
+      <div class="price d-flex justify-content-between">
+        <button class="property-price d-flex"><h5>rs 70,000</h5> <span>/per year</span> </button>
+   <img src="./assets/img/Heart.svg" alt="">
+      </div>
+    </div>
+    </div>
+ </div>
+    </div>
+    <div class="row gy-4 mt-5 gx-4"> 
+      <div class=" col-sm-12 col-lg-6">
+        <div class="property-box  property-box-1 d-flex">
+         <div class="img-box" style="overflow: hidden;">
+          <a href="property.html">
+            <img src="./assets/img/Image 18.png" alt="" class="img-fluid" style="flex-basis:20% ;">
+          </a>
+         </div>
+         <div class="caption pt-3">
+          <h6 class="pt-2">Villa for Quick Sale</h6>
+          <span class="location">  <img src="./assets/img/Iconly-Bulk-Location.svg" alt="" class="svg-img-color"> jasikhel lalitpur</span> <br>
+          <div class="d-flex justify-content-between pt-3">
+            <span class=" "> <img src="./assets/img/Icon ionic-ios-bed.svg" alt=""  class="svg-img-color"> 5 bed</span> <span class=""> <img src="./assets/img/assembly-area.svg" alt=""  class="svg-img-color"> area 1200 sq.km(A)</span>
+          </div>
+          <div class="d-flex justify-content-between pt-3">
+            <span class=""> <img src="./assets/img/Icon awesome-bath.svg" alt=""  class="svg-img-color">  5 bathrooms</span> <span class=""> <img src="./assets/img/Icon awesome-clock.svg" alt=""  class="svg-img-color"> 9 minutes ago</span>
+          </div>
+         
+          <div class="price d-flex justify-content-between">
+            <button class="property-price d-flex"><h5>rs 70,000</h5> <span>/per year</span> </button>
+       <img src="./assets/img/Heart.svg" alt="">
+          </div>
+        </div>
+        </div>
+     </div>
+     <div class=" col-sm-12 col-lg-6">
+      <div class="property-box  property-box-1 d-flex">
+       <div class="img-box" style="overflow: hidden;">
+        <a href="property.html">
+          <img src="./assets/img/Image 18.png" alt="" class="img-fluid" style="flex-basis:20% ;">
+        </a>
+       </div>
+       <div class="caption pt-3">
+        <h6 class="pt-2">Mega Mansion in Sale</h6>
+        <span class="location">  <img src="./assets/img/Iconly-Bulk-Location.svg" alt="" class="svg-img-color"> jasikhel lalitpur</span> <br>
+        <div class="d-flex justify-content-between pt-3">
+          <span class=" "> <img src="./assets/img/Icon ionic-ios-bed.svg" alt=""  class="svg-img-color"> 5 bed</span> <span class=""> <img src="./assets/img/assembly-area.svg" alt=""  class="svg-img-color"> area 1200 sq.km(A)</span>
+        </div>
+        <div class="d-flex justify-content-between pt-3">
+          <span class=""> <img src="./assets/img/Icon awesome-bath.svg" alt=""  class="svg-img-color">  5 bathrooms</span> <span class=""> <img src="./assets/img/Icon awesome-clock.svg" alt=""  class="svg-img-color"> 9 minutes ago</span>
+        </div>
+       
+        <div class="price d-flex justify-content-between">
+          <button class="property-price d-flex"><h5>rs 70,000</h5> <span>/per year</span> </button>
+     <img src="./assets/img/Heart.svg" alt="">
+        </div>
+      </div>
+      </div>
+   </div>
+  
+
+      
+      </div>
+    </div>
+</section>
+<section class="similar mt-5">
+<div class="container">
+  <div class="d-flex align-items-center justify-content-between py-5">
+    <h1>Recommended Properties</h1>
+    <div class="right-arrow d-flex align-items-center ">
+      <div class="right">
+        <img src="./assets/img/Arrow - Right.svg" alt="" style="transform: rotate(180deg);">
+      </div>
+      <div class="left right">
+        <img src="./assets/img/Arrow - Right.svg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="row  gy-5">
+   <div class=" col-sm-6 col-lg-4 ">
+     <div class="property-box">
+      <a href="property.html">
+        <div class="img">
+          <img src='https://picsum.photos/600/400' alt="" class="img-fluid">
+        </div>
+      </a>
+          <div class="new">
+            new
+          </div>
+          <div class="caption pt-3">
+            <h6 class="pt-2">Office Space</h6>
+            <span class="location">  <img src="./assets/img/Iconly-Bulk-Location.svg" alt="" class="svg-img-color"> jasikhel lalitpur</span> <br>
+            <div class="d-flex justify-content-between pt-3">
+              <span class=" "> <img src="./assets/img/Icon ionic-ios-bed.svg" alt=""  class="svg-img-color"> 5 bed</span> <span class=""> <img src="./assets/img/assembly-area.svg" alt=""  class="svg-img-color"> area 1200 sq.km(A)</span>
+            </div>
+            <div class="d-flex justify-content-between pt-3">
+              <span class=""> <img src="./assets/img/Icon awesome-bath.svg" alt=""  class="svg-img-color">  5 bathrooms</span> <span class=""> <img src="./assets/img/Icon awesome-clock.svg" alt=""  class="svg-img-color"> 9 minutes ago</span>
+            </div>
+           
+            <div class="price d-flex justify-content-between">
+              <button class="property-price d-flex"><h5>rs 70,000</h5> <span>/per year</span> </button>
+         <img src="./assets/img/Heart.svg" alt="">
+            </div>
+          </div>
+     </div>
+   </div>
+   <div class="col-sm-6 col-lg-4 ">
+    <div class="property-box">
+      <a href="property.html">
+        <div class="img">
+          <img src='https://picsum.photos/600/400' alt="" class="img-fluid">
+        </div>
+      </a>
+         <div class="new">
+           new
+         </div>
+         <div class="caption pt-3">
+          <h6 class="pt-2">Castle At Lumberwald</h6>
+          <span class="location">  <img src="./assets/img/Iconly-Bulk-Location.svg" alt="" class="svg-img-color"> jasikhel lalitpur</span> <br>
+          <div class="d-flex justify-content-between pt-3">
+            <span class=" "> <img src="./assets/img/Icon ionic-ios-bed.svg" alt=""  class="svg-img-color"> 5 bed</span> <span class=""> <img src="./assets/img/assembly-area.svg" alt=""  class="svg-img-color"> area 1200 sq.km(A)</span>
+          </div>
+          <div class="d-flex justify-content-between pt-3">
+            <span class=""> <img src="./assets/img/Icon awesome-bath.svg" alt=""  class="svg-img-color">  5 bathrooms</span> <span class=""> <img src="./assets/img/Icon awesome-clock.svg" alt=""  class="svg-img-color"> 9 minutes ago</span>
+          </div>
+         
+          <div class="price d-flex justify-content-between">
+            <button class="property-price d-flex"><h5>rs 70,000</h5> <span>/per year</span> </button>
+       <img src="./assets/img/Heart.svg" alt="">
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-4 ">
+    <div class="property-box">
+      <a href="property.html">
+        <div class="img">
+          <img src='https://picsum.photos/600/400' alt="" class="img-fluid">
+        </div>
+      </a>
+         <div class="new">
+           new
+         </div>
+         <div class="caption pt-3">
+          <h6 class="pt-2">Parking Space</h6>
+          <span class="location">  <img src="./assets/img/Iconly-Bulk-Location.svg" alt="" class="svg-img-color"> jasikhel lalitpur</span> <br>
+          <div class="d-flex justify-content-between pt-3">
+            <span class=" "> <img src="./assets/img/Icon ionic-ios-bed.svg" alt=""  class="svg-img-color"> 5 bed</span> <span class=""> <img src="./assets/img/assembly-area.svg" alt=""  class="svg-img-color"> area 1200 sq.km(A)</span>
+          </div>
+          <div class="d-flex justify-content-between pt-3">
+            <span class=""> <img src="./assets/img/Icon awesome-bath.svg" alt=""  class="svg-img-color">  5 bathrooms</span> <span class=""> <img src="./assets/img/Icon awesome-clock.svg" alt=""  class="svg-img-color"> 9 minutes ago</span>
+          </div>
+         
+          <div class="price d-flex justify-content-between">
+            <button class="property-price d-flex"><h5>rs 70,000</h5> <span>/per year</span> </button>
+       <img src="./assets/img/Heart.svg" alt="">
+          </div>
+        </div>
+    </div>
+  </div>
+  </div>
+  
+</div>
+</section>
+<section class="tranding mt-5">
+<div class="container">
+  <div class="d-flex align-items-center justify-content-between py-5">
+    <h1>Top Housings</h1>
+    <div class="right-arrow d-flex align-items-center ">
+      <div class="right">
+        <img src="./assets/img/Arrow - Right.svg" alt="" style="transform: rotate(180deg);">
+      </div>
+      <div class="left right">
+        <img src="./assets/img/Arrow - Right.svg" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="row gy-4"> 
+    <div class="col-sm-12 col-lg-6">
+   
+      <div class="property-box  property-box-1 d-flex ">
+        <div class="img-box" style="overflow: hidden;">
+          <a href="property.html">
+          <img src="./assets/img/Image 18.png" alt="" class="img-fluid" style="flex-basis:20% ;">
+        </a>
+        </div>
+        <div class="caption pt-3">
+         <h6 class="pt-2">Bodhi Homes</h6>
+         <span class="location">  <img src="./assets/img/Iconly-Bulk-Location.svg" alt="" class="svg-img-color"> jasikhel lalitpur</span> <br>
+         <div class="d-flex justify-content-between pt-3">
+           <span class=" "> <img src="./assets/img/Icon ionic-ios-bed.svg" alt=""  class="svg-img-color"> 5 bed</span> <span class=""> <img src="./assets/img/assembly-area.svg" alt=""  class="svg-img-color"> area 1200 sq.km(A)</span>
+         </div>
+         <div class="d-flex justify-content-between pt-3">
+           <span class=""> <img src="./assets/img/Icon awesome-bath.svg" alt=""  class="svg-img-color">  5 bathrooms</span> <span class=""> <img src="./assets/img/Icon awesome-clock.svg" alt=""  class="svg-img-color"> 9 minutes ago</span>
+         </div>
+        
+         <div class="price d-flex justify-content-between">
+           <button class="property-price d-flex"><h5>rs 70,000</h5> <span>/per year</span> </button>
+      <img src="./assets/img/Heart.svg" alt="">
+         </div>
+       </div>
+       </div>
+
+  
+   </div>
+   <div class=" col-sm-12 col-lg-6">
+    <div class="property-box  property-box-1 d-flex">
+     <div class="img-box" style="overflow: hidden;">
+      <a href="property.html">
+        <img src="./assets/img/Image 18.png" alt="" class="img-fluid" style="flex-basis:20% ;">
+      </a>
+     </div>
+     <div class="caption pt-3">
+      <h6 class="pt-2">KCL Colony</h6>
+      <span class="location">  <img src="./assets/img/Iconly-Bulk-Location.svg" alt="" class="svg-img-color"> jasikhel lalitpur</span> <br>
+      <div class="d-flex justify-content-between pt-3">
+        <span class=" "> <img src="./assets/img/Icon ionic-ios-bed.svg" alt=""  class="svg-img-color"> 5 bed</span> <span class=""> <img src="./assets/img/assembly-area.svg" alt=""  class="svg-img-color"> area 1200 sq.km(A)</span>
+      </div>
+      <div class="d-flex justify-content-between pt-3">
+        <span class=""> <img src="./assets/img/Icon awesome-bath.svg" alt=""  class="svg-img-color">  5 bathrooms</span> <span class=""> <img src="./assets/img/Icon awesome-clock.svg" alt=""  class="svg-img-color"> 9 minutes ago</span>
+      </div>
+     
+      <div class="price d-flex justify-content-between">
+        <button class="property-price d-flex"><h5>rs 70,000</h5> <span>/per year</span> </button>
+   <img src="./assets/img/Heart.svg" alt="">
+      </div>
+    </div>
+    </div>
+ </div>
+
+
+    
+    </div>
+   </div>
+</section>
+<section class="ad mt-5">
+<div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="ads mt-2" style="min-height: 180px; background-image: url('https://picsum.photos/600/200'); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 15px;"></div>
+      </div>
+      <div class="col-lg-6">
+        <div class="ads mt-2" style="min-height: 180px; background-image: url('https://picsum.photos/600/200'); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 15px;"></div>
+      </div>
+    </div>
+   
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="lalpurja mt-5">
+<div class="container">
+      <h1 class="text-center">How lalpurja work?</h1>
+      <div class="row mb-0 gy-5 mt-5 gx-5">
+        <div class="col-md-6 col-lg-4 text-center ">
+         <div class="lalpurja-content">
+        <div class="icon ">
+         <img src="./assets/img/building-land.svg" alt="">
+          <h4 class="py-3">Buy Home,Land </h4>
+        </div>
+  
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate impedit sit provident vero velit dolorum atque facere aliquid laudantium, omnis quas animi iusto assumenda
+          </p>
+            <a href="buyhomeland.html"><button class="home-browse d-flex align-items-center"><h6 class="mb-0">Browse Property</h6><img src="./assets/img/Arrow - Right.svg" alt="" class="ms-3"></button></a>
+         </div>
+        </div>
+        <div class="col-md-6 col-lg-4 text-center">
+          <div class="lalpurja-content">
+         <div class="icon ">
+            <img src="./assets/img/sold-house.svg" alt="">
+         
+         </div>
+           <h4 class="py-3">Sell A Home </h4>
+           <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate impedit sit provident vero velit dolorum atque facere aliquid laudantium, omnis quas animi iusto assumenda
+           </p>
+   <a href="sellhome.html"><button class="home-browse d-flex align-items-center"><h6 class="mb-0">Browse Property</h6><img src="./assets/img/Arrow - Right.svg" alt="" class="ms-3"></button></a>
+          </div>
+         </div>
+         <div class="col-md-6 col-lg-4 text-center ">
+          <div class="lalpurja-content">
+         <div class="icon ">
+          <img src="./assets/img/rent.svg" alt="">
+         </div>
+           <h4 class="py-3">Rent Your Property </h4>
+           <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate impedit sit provident vero velit dolorum atque facere aliquid laudantium, omnis quas animi iusto assumenda
+           </p>
+<a href="rent.html"><button class="home-browse d-flex align-items-center"><h6 class="mb-0">Browse Property</h6><img src="./assets/img/Arrow - Right.svg" alt="" class="ms-3"></button></a>
+          </div>
+         </div>
+      </div>
+</div>
+</section>
+<section class="explore py-5">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-lg-6">
+      <div class="explore-content">
+        <h1>Explore by property Type</h1>
+        <p class="text_p py-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. temporibus mollitia optio? Beatae, sapiente deserunt?</p>
+          <img src='https://picsum.photos/600/200' alt="" class="img-fluid" style="min-height: 400px;"
+           data-aos="fade-up"
+             data-aos-duration="3000"
+          >
+      </div>
+    </div>
+    <div class="col-sm-12 col-lg-6">
+       <div class="expolre-property">
+        <div class="row  gy-3 gx-3 ">
+          <div class="col-6">
+        <a href="listingshow.html">
+          <div class="explore-home"
+          data-aos="fade-bottom"
+          data-aos-delay="300"
+           data-aos-interval="200"
+          data-aos-easing="linear"
+          data-aos-duration="900"
+          >
+          <i class="las la-building"></i>
+          <h6>luxury house</h6>
+        </div>
+        </a>
+        </div>
+          <div class="col-6">
+            <a href="listingshow.html">
+            <div class="explore-home"
+            data-aos="fade-bottom"
+            data-aos-delay="300"
+             data-aos-interval="200"
+            data-aos-easing="linear"
+            data-aos-duration="900"
+            >
+        
+              <i class="las la-hotel"></i>
+              <h6>villa</h6>
+           
+            </div>
+          </a>
+          </div>
+          <div class="col-6">
+            <a href="listingshow.html">
+               <div class="explore-home"
+               data-aos="fade-bottom"
+               data-aos-delay="300"
+                data-aos-interval="200"
+               data-aos-easing="linear"
+               data-aos-duration="900"
+               >
+                <i class="las la-home"></i>
+                <h6>Hotel</h6>
+               </div>
+              </a>
+          </div>
+          <div class="col-6">
+            <a href="listingshow.html">
+            <div class="explore-home"
+            data-aos="fade-bottom"
+            data-aos-delay="500"
+             data-aos-interval="200"
+            data-aos-easing="linear"
+            data-aos-duration="900"
+          
+            >
+              <i class="las la-city"></i>
+              <h6>Appartment</h6>
+            </a>
+            </div>
+          </div>
+          <div class="col-6">
+            <a href="listingshow.html">
+            <div class="explore-home"
+            data-aos="fade-bottom"
+            data-aos-delay="300"
+             data-aos-interval="200"
+            data-aos-easing="linear"
+            data-aos-duration="900"
+          
+            >
+            
+              <i class="las la-city"></i>
+              <h6>office</h6>
+            </div>
+          </a>
+          </div>
+          <div class="col-6">
+            <a href="listingshow.html">
+               <div class="explore-home"
+               data-aos="fade-bottom"
+               data-aos-delay="100"
+                data-aos-interval="200"
+               data-aos-easing="linear"
+               data-aos-duration="900"
+          
+               >
+                <i class="las la-landmark"></i>
+                <h6>home</h6>
+               </div>
+              </a>
+          </div>
+        </div>
+        <div class="row gx-3 py-3">
+          
+        </div>
+       </div>
+    </div>
+  </div>
+
+</div>
+</section>
+      <section class="update my-5">
+        <div class="container">
+          <div class="row gy-5">
+            <div class="col-lg-4">
+              <div class="imges" data-aos="fade-right"
+              data-aos-duration="2000">
+                <div class="img-2">
+                  <img src=  'https://picsum.photos/600/200' alt="" class="img-fluid" >
+                </div>
+               </div>
+            </div>
+            <div class="col-lg-8"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+            
+              <div class="py-5">
+                <h1>subscribe to our newletter for latest update</h1>
+                <p>Put your email address and get next updates from Merolagaani</p>
+                <div class="emi-detail ">
+                  <div class="user-input-suscribe  d-flex mt-4">
+                 <input type="text" class="text-field-suscribe  "  > <button class="subscribe d-flex justify-content-center align-items-center btn-hover btn_a"> <img src="./assets/img/Iconly-Bulk-Send.svg" alt="" class="me-2"> <h6>subscribe</h6></button>
+                 <label for="" class="place-email ">Your email address</label>
+                  </div>
+                </div>
+               </div>
+            </div>
+          </div>
+            
+        </div>
+      </section>
+<section class="ad mt-5 ">
+<div class="container">
+    <div class="row">
+      <div class=" col-sm-4 col-lg-4">
+        <div class="ads mt-2" style="min-height: 180px; background-image: url('https://picsum.photos/600/200'); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 15px;"></div>
+      </div>
+      <div class=" col-sm-4 col-lg-4">
+        <div class="ads mt-2" style="min-height: 180px; background-image: url('https://picsum.photos/600/200'); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 15px;"></div>
+      </div>
+      <div class="col-sm-4 col-lg-4">
+        <div class="ads mt-2" style="min-height: 180px; background-image: url('https://picsum.photos/600/200'); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 15px;"></div>
+      </div>
+    </div>
+   
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="mt-5 emi-box-1">
+<div class="container emi" data-aos="fade-left"
+data-aos-duration="1000" >
+  <div class=" row gy-4">
+    <div class="col-sm-8">
+        <h1>Calculate your EMI (Home Loan)</h1>
+        <p class="text_p emi-p">Find out about the home loans that you can get</p>
+    </div>
+    <div class="col-sm-3">
+   <img src="./assets/img/Mask Group 14.png" alt="" class="img-fluid">
+  </div>
+   
+  </div>
+ <div class="row gy-5 mt-2">
+   <div class="col-sm-4">
+   
+     <div class="user-input">
+      <input type="text" class="text-field emiloan">
+      <label for="" class="place label-loan">loan amount</label>
+     </div>
+   
+   </div>
+   <div class="col-sm-4">
+    <div class="user-input">
+      <input type="text" placeholder="" class="text-field nomonth">
+      <label for="" class="place label-month">No. of Months</label>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    
+    <div class="user-input">
+      <input type="text" placeholder="" class="text-field rate">
+      <label for="" class="place label-rate ">intrest rate(%)</label>
+    </div>
+ 
+  </div>
+ </div>
+ <div class="row gy-3 pt-4">
+   <h4 class="result">result</h4>
+   <div class="col-md-6 col-lg-3">
+   <div class="emi-box">
+    <span class="month" >monthly EMI</span>
+    <span class="npr"><h6>NPR. 23456.5</h6></span>
+   </div>
+   </div>
+   <div class="col-md-6 col-lg-3">
+    <div class="emi-box">
+     <span class="month" >monthly EMI</span>
+     <span class="npr"><h6>NPR. 23456.5</h6></span>
+    </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="emi-box">
+       <span class="month" >monthly EMI</span>
+       <span class="npr"><h6>NPR. 23456.5</h6></span>
+      </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="emi-box">
+         <span class="month" >monthly EMI</span>
+         <span class="npr"><h6>NPR. 23456.5</h6></span>
+        </div>
+        </div>
+ </div>
+</div>
+</section>
+<section class="footer mt-5">
+<div class="container">
+  <div class="row  gx-5 gy-5 justify-content-center">
+    <div class="col-sm-6 col-md-6 col-lg-3">
+      <div class="logo">
+        <img src="assets/img/Original.png" alt="" class="img-fluid" style="width: 153 ; height: 40px;">
+      </div>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum .
+      </p>
+      <span><a href=""><i class="lab la-facebook-f"></i></a></span>
+      <span><a href=""><i class="lab la-instagram mx-3"></i></a></span>
+      <span><a href=""><i class="lab la-twitter me-3"></i></a></span>
+      <span><a href=""><i class="lab la-youtube"></i></a></span>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-3 text-start" >
+      <h4>company</h4>
+      <ul class="ps-0 mt-4">
+        <li>about</li>
+        <li>contact</li>
+        <li>carrer</li>
+        <li>blog</li>
+      </ul>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-3">
+      <h4>support</h4>
+      <ul class="ps-0 mt-4">
+        <li>FAQ</li>
+        <li>Booking</li>
+        <li>City Guide</li>
+        <li>Cancellation Option</li>
+      </ul>
+    </div>
+    <div class="col-sm-6  col-md-6 col-lg-3" >
+      <h4>office</h4>
+      <ul class="ps-0 mt-4">
+        <li> <img src="./assets/img/Location.svg" class="me-1 footer-svg" alt=""> Kathmandu, Nepal</li>
+        <li>
+<img src="./assets/img/35.svg" alt="" class="me-1 footer-svg"> info@smartholdings.com
+        </li>
+       
+        <li> <img src="./assets/img/34.svg" class="me-1 footer-svg" alt=""> +977 9825486754</li>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom-footer">
+    <div class="row my-3 justify-content-center gx-0">
+      <div class="col-md-4">
+        <p>©2021 Merolagaani</p>
+      </div>
+      <div class="col-md-4">
+        <p>Designed by Tecare Software</p>
+      </div>
+      <div class="col-md-4">
+        <p>
+      <span class="p-footer">Terms & Conditions</span>
+       <span class=" p-footer mx-2">Privacy Policy</span>
+     <span class=" p-footer">FAQS</span>
+        </p>
+      </div>
+  
+  </div>
+</div>
+</section>
+  </div>
+
+    <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/owl/owl.carousel.min.js"></script>
+    <script src="assets/vendors/aos/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+  
+    <script>
+      $(document).ready(function() {
+       $("text-field-suscribe").click(function(){
+         alert("hello")
+           // $(".label-dine").addClass("toggle-label")
+           // $(".login-dine").addClass("input-bg")
+       });
+     });
+             </script>
+</body>
+
+</html>

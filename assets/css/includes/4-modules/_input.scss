@@ -1,0 +1,86 @@
+.form-control {
+  @include bordernone;
+  background-color: $lightgrey;
+  border-radius: 15px;
+  padding: 20px 20px;
+  overflow: hidden;
+}
+.property-input {
+  background-color: #ffff !important;
+  border: 2px solid $green !important;
+}
+input[type='text']:focus {
+  z-index: -1 !important;
+  box-shadow: none !important;
+  //   background-color: #fff!important;
+}
+input[type='password']:focus {
+  z-index: -1 !important;
+  box-shadow: none !important;
+  background-color: #fff !important;
+}
+.user-input {
+  position: relative;
+}
+.input-bg {
+  background-color: #ffff !important;
+  border: 2px solid $green !important;
+}
+.search-bar {
+  position: absolute;
+  top: 18px !important;
+  left: 31px;
+}
+.place {
+  position: absolute;
+  top: 14px;
+  left: 31px;
+  @include potrait {
+    left: 10px !important;
+  }
+  color: $text-color;
+  transition: all 0.3s linear;
+  z-index: 222;
+  font-size: 14px;
+}
+
+.user-input-suscribe {
+  position: relative;
+  @include potrait {
+    flex-direction: column;
+  }
+  .place-email {
+    position: absolute;
+    top: 10px;
+    transition: all 0.3s linear;
+    left: 30px;
+  }
+}
+.toggle-label {
+  background-color: #fff;
+  padding: 0px 8px;
+  top: -10px !important;
+  transition: all 0.2s linear;
+  input {
+    background-color: #ffff !important;
+  }
+}
+.user-input-name {
+  position: relative;
+  .place-login {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: $text-color;
+    transition: all 0.3s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.remark-input {
+}
+.remark-form-control {
+  outline: none;
+  border: 1px solid $text-color !important;
+}

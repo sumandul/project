@@ -1,0 +1,8 @@
+<svg id="Iconly_Bulk_Chart" data-name="Iconly/Bulk/Chart" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="Chart" transform="translate(1.667 1.667)">
+    <path id="Fill_1" data-name="Fill 1" d="M12.23,0H4.444C1.607,0,0,1.607,0,4.444v7.778c0,2.837,1.607,4.444,4.444,4.444H12.23c2.837,0,4.437-1.607,4.437-4.444V4.444C16.667,1.607,15.067,0,12.23,0" fill="#757575" opacity="0.4"/>
+    <path id="Fill_4" data-name="Fill 4" d="M.689,0A.694.694,0,0,0,0,.7V6.422a.693.693,0,0,0,1.385,0V.7a.7.7,0,0,0-.7-.7" transform="translate(3.785 6.141)" fill="#757575"/>
+    <path id="Fill_6" data-name="Fill 6" d="M.689,0A.694.694,0,0,0,0,.7V9.156a.693.693,0,0,0,1.385,0V.7a.7.7,0,0,0-.7-.7" transform="translate(7.674 3.407)" fill="#757575"/>
+    <path id="Fill_8" data-name="Fill 8" d="M.7,0A.7.7,0,0,0,0,.7V3.4a.693.693,0,0,0,1.385,0V.7A.694.694,0,0,0,.7,0" transform="translate(11.504 9.163)" fill="#757575"/>
+  </g>
+</svg>

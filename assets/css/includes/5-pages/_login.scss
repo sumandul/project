@@ -1,0 +1,163 @@
+
+ .password-area{
+    position: relative;
+    .hide-pass{
+        position: absolute;
+        right: 30px;
+        top: 25px;
+        z-index: 5555;
+        font-size: 20px;
+        color: $text-color;
+    }
+  label{
+      font-size: 18px;
+      color: $text-color;
+     
+  }
+}
+
+.forgot-password{
+    color: $text-color;
+    text-transform: capitalize;
+    cursor: pointer;
+      margin: 10px 0px;
+      font-family: Roboto, sans-serif!important;
+      &:hover{
+          color: $green;
+      }
+}
+.verify-password{
+    margin: auto;
+   
+
+    p{
+        color: $text-color;
+        line-height: 37px;
+    }
+ .form-control{
+     padding: 19px 50px!important;
+     font-size: 19px;
+ }
+
+    margin: auto;
+    .verify-btn{
+        margin-top: 30px;
+        background-color: $green;
+        width: 100%;
+        border-radius: 15px;
+        padding: 16px 0px;
+        box-shadow: 0px 10px 48px #02693629;
+        a{
+            color: #FFFF;
+            font-size: 19px;
+          
+        }
+    }
+}
+.login-area{
+    margin-top: 70px!important;
+}
+.login-box{
+   
+    .google{
+        font-family: cora-medium!important;
+        color: #5B5B5B;
+        font-size: 17px;
+        border: 1px solid #DFDFDF;
+        border-radius: 15px;
+        padding: 13px 0px;
+    }
+    
+   
+    .container{
+    
+ display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    }
+    .form-box{
+        padding-top: 190px!important;
+        .active{
+            background-color: $lightgreen;
+            border: 2px solid $green;
+            color: $green;
+        }
+      
+        width: 70%;
+     
+        @include media('<=desktop') {
+            width: 100%;
+        
+                 }
+        P{
+            color: $text-color;
+            
+        }
+        .inner-form{
+            width: 60%;
+            margin: auto;
+            overflow: hidden;
+            @include media('<=desktop') {
+                width: 100%;
+       
+                     }
+            .or{
+                color: #9E9E9E;
+                font-family: cora-light!important;
+                position: relative;
+                &::after{
+                    content:'';
+                    position: absolute;
+                    width: 50%;
+                    background-color: #ebe6e6;
+                    height: 3px;
+                    top: 8px;
+                    right:  -70px;
+                    
+                }
+                &::before{
+                    content:'';
+                    position: absolute;
+                    width: 50%;
+                    background-color:#ebe6e6;
+                    height: 3px;
+                    top: 8px;
+                    left:  -70px;
+                    
+                }
+            }
+            label{
+                color: $text-color;
+                font-size: 18px!important;
+               
+               
+            }
+            .form-control{
+           @include bordernone;
+           background-color: $lightgrey;
+           padding: 20px 40px;
+           font-size: 20px;
+           border-radius: 15px;
+          
+  
+       }
+       .user{
+      
+        
+       }
+
+       .password-hide{
+           position: absolute;
+           right: 20px;
+           top: 20px;
+           color: $text-color;
+           font-size: 23px;
+       }
+  
+    
+    
+        
+    }
+}
+}

@@ -1,0 +1,739 @@
+.action {
+  @include media('<=desktop') {
+    justify-content: space-between;
+  }
+}
+
+.status-box {
+  background-color: $lightgreen;
+  color: $green;
+  text-align: center;
+  padding: 2px 20px;
+  border-radius: 15px;
+}
+.status-box-1 {
+  background-color: rgb(220, 247, 250);
+  padding: 2px 20px;
+  border-radius: 15px;
+  text-align: center;
+  color: #0a8593;
+}
+.status-box-2 {
+  background-color: rgb(250, 230, 251);
+  color: rgb(148, 100, 140);
+  text-align: center;
+  padding: 2px 20px;
+  border-radius: 15px;
+}
+.status-box-3 {
+  background-color: rgb(253, 235, 230);
+  color: rgb(205, 78, 35);
+  padding: 2px 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.property-listing {
+  .inner-add {
+    color: $text-color;
+    font-size: 14px;
+  }
+}
+
+.lead-add {
+  .alllead-table {
+    margin-top: 40px;
+  }
+  background-color: $lightgreen !important;
+  padding: 10px 20px;
+  border-radius: 15px;
+  a {
+    font-size: 16px;
+    color: $green;
+    i {
+      margin-right: 10px;
+    }
+  }
+}
+.lead-search {
+  p {
+    color: $text-color;
+    font-size: 18px;
+    font-weight: 600;
+    span {
+      color: #0000 !important;
+    }
+  }
+}
+.lead-menu {
+  .left {
+    p {
+      font-size: 17px;
+      font-weight: 600;
+    }
+  }
+  .btn-all-lead {
+    padding: 6px 18px;
+
+    color: $text-color;
+  }
+  .active {
+    background-color: $lightgreen;
+    border-radius: 15px;
+  }
+}
+
+#tab1:checked {
+  background-color: red;
+}
+.action-btn {
+  margin-top: 30px;
+  .action-btn-cancel {
+    border-radius: 15px;
+    background-color: $lightgrey;
+    padding: 20px 30px;
+    h6 {
+      font-size: 17px;
+      color: $text-color;
+    }
+  }
+  .action-btn-save {
+    border-radius: 15px;
+    background-color: $green;
+    padding: 20px 30px;
+
+    h6 {
+      font-size: 17px;
+      color: #ffff;
+    }
+  }
+}
+.edit-profile {
+  .profile-box {
+    position: relative;
+
+    .edit-btn {
+      background-color: $green;
+      height: 34px;
+      width: 34px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      position: absolute;
+      top: 0px;
+      right: -3px;
+    }
+    img {
+      border-radius: 15px;
+    }
+  }
+}
+.add-user-input {
+  position: relative;
+  .add-label {
+    position: absolute;
+    top: 18px;
+    left: 24px;
+    transition: all 0.3s linear;
+    color: $text-color;
+    font-size: 16px;
+  }
+  .add-field:focus ~ .add-label {
+    background-color: #ffff;
+
+    padding: 0px 8px;
+    top: -12px !important;
+  }
+}
+
+.delete-confirm-title {
+  font-size: 21px !important;
+  color: $text-color;
+}
+
+.mobile-dashboard {
+  z-index: 999 !important;
+  padding: 20px 0px;
+  background-color: $lightgreen;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  @include media('>=desktop') {
+    display: none !important;
+  }
+
+  ul {
+    li {
+      i {
+        color: $text-color;
+        font-size: 35px;
+
+        &:hover {
+          background-color: $green;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+.toast-header {
+  background-color: $lightgreen;
+}
+.confirmtoast {
+  border-radius: 15px;
+}
+
+.toast {
+  position: absolute;
+  bottom: 200px;
+  right: 13px;
+  z-index: 2222;
+}
+.form-check-input:checked {
+  background-color: $green !important;
+  border-color: $green !important;
+}
+.modal {
+  .modal-body {
+    h6 {
+      font-size: 24px;
+    }
+  }
+  .modal-dialog {
+    overflow: hidden;
+  }
+  background-color: rgba($lightgreen, 0.1);
+  .modal-content {
+    background-color: $lightgrey;
+    border-radius: 15px;
+  }
+}
+.btn-close {
+  background-color: $lightgreen;
+  color: $green;
+}
+
+.help {
+  border-radius: 15px;
+  padding: 10px 20px;
+  background-color: $lightgreen;
+
+  text-transform: capitalize;
+  color: $green !important;
+  font-size: 20px;
+}
+.la-tachometer-alt {
+  font-size: 25px;
+}
+.new {
+  border-radius: 15px;
+  background-color: $blue;
+
+  h6 {
+    color: #fff;
+    font-size: 14px;
+    border-radius: 15px !important;
+  }
+}
+.enquery {
+  background-color: $lightgreen;
+  padding: 10px 20px;
+  border-radius: 15px;
+  h6 {
+    color: $green;
+    font-size: 14px;
+    i {
+      color: $green;
+    }
+  }
+}
+.repost {
+  a {
+    h6 {
+      font-size: 13px !important;
+    }
+    color: $green;
+  }
+  i {
+    color: $green;
+    font-size: 16px;
+  }
+}
+.property-wrapper {
+  background-color: #eeeeee;
+}
+.add {
+  @include potrait {
+    padding: 0px 0px !important;
+  }
+  @include media('<=desktop') {
+    padding: 0px 30px;
+  }
+}
+.userprofile-top {
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 6px 23px;
+  h6 {
+    font-size: 15px;
+    color: #343434;
+  }
+
+  .user-img {
+    img {
+      border-radius: 17px;
+      object-fit: cover;
+      min-height: 10px;
+    }
+  }
+}
+.fix-dashboard {
+  @include potrait {
+    // position: fixed;
+    // top: 117px;
+    // width: 100%;
+    // z-index: 1;
+  }
+}
+.user-dashboard-profile {
+  background-color: #fff;
+  @include potrait {
+    border-radius: 0 !important;
+    padding: 15px 8px;
+  }
+  border-radius: 15px;
+
+  padding: 10px 12px;
+  h6 {
+    font-size: 17px;
+    color: #343434;
+  }
+  p {
+    color: $text-color;
+  }
+  .img-box {
+    img {
+      object-fit: cover;
+      border-radius: 17px;
+    }
+  }
+}
+.listing-row {
+  @include media('<=desktop') {
+    width: 100% !important;
+  }
+  @include media('>=desktop') {
+    width: 78% !important;
+  }
+}
+.user-setting {
+  @include media('<=desktop') {
+    display: none;
+  }
+
+  @include potrait {
+  }
+  border-radius: 15px;
+  padding: 30px 43px;
+  margin-top: 40px;
+  background-color: #fff;
+  .active {
+    background-color: #eaf3ee;
+    border-radius: 15px;
+    h6 {
+      color: $green;
+    }
+    i {
+      color: $green;
+    }
+  }
+  .icon {
+    cursor: pointer;
+    padding: 5px 15px !important;
+  }
+  h6 {
+    font-size: 16px;
+    color: #757575;
+  }
+  i {
+    font-size: 28px;
+    color: #757575;
+    margin-right: 8px;
+  }
+  .logout {
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: #f2f2f2;
+    padding: 17px 40px;
+    border-radius: 15px;
+    i {
+      color: #757575;
+    }
+    h6 {
+      font-size: 16px;
+      a {
+        color: #757575;
+      }
+    }
+  }
+}
+.addnew {
+  h6 {
+    font-size: 14px !important;
+  }
+  @include potrait {
+    margin-top: 10px !important;
+  }
+  .property-listing {
+    a {
+      color: $text-color !important;
+    }
+  }
+
+  @include potrait {
+    margin-top: 100px;
+  }
+  @include media('<=desktop') {
+    margin-left: 0 !important;
+  }
+  .address {
+  }
+  .form-select {
+    padding: 18px 30px;
+  }
+  .form-control {
+    padding: 18px 30px;
+  }
+  .list {
+    .list-row {
+      width: 100% !important;
+    }
+  }
+  .price {
+    .price-row {
+      width: 100% !important;
+    }
+  }
+  .active {
+    background-color: $lightgreen !important;
+    color: $green !important;
+    h6 {
+      color: $green !important;
+    }
+  }
+  .form-check-label {
+    color: $text-color;
+    font-size: 16px;
+  }
+  .form-check-input:checked {
+    background-color: $green !important;
+    border-color: $green !important;
+  }
+  padding: 10px 30px;
+  border-radius: 20px;
+  h5 {
+    font-size: 18px;
+  }
+
+  .title {
+    h5 {
+      font-size: 20px;
+    }
+  }
+
+  .back {
+    background-color: #f2f2f2;
+    padding: 10px 30px;
+    border-radius: 15px;
+    color: #757575;
+    a {
+      color: #757575;
+    }
+    i {
+      font-size: 20px;
+    }
+  }
+
+  .btn-home {
+    background-color: $lightgrey;
+    border-radius: 15px;
+    padding: 10px 20px;
+
+    color: $text-color;
+    i {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+    h6 {
+      color: $text-color;
+      font-size: 17px;
+    }
+  }
+}
+.upload-area {
+  border-radius: 20px;
+  border: 2px solid $lightgrey;
+  padding: 100px 0px;
+  .la-file-upload {
+    font-size: 80px;
+    color: $green;
+  }
+}
+.upload-img {
+  overflow: hidden;
+
+  .upload-img-list {
+    &:hover .fade-background {
+      height: 122%;
+    }
+    border-radius: 15px;
+    position: relative;
+
+    overflow: hidden;
+    width: 100%;
+    .fade-background {
+      background-color: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      top: -35px;
+      left: 0;
+      width: 100%;
+
+      display: grid;
+      place-items: center;
+
+      i {
+        z-index: 333;
+        color: #fff;
+        font-size: 24px;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+}
+.linbk {
+  background-color: $lightgrey;
+
+  border-radius: 15px;
+  padding: 10px 20px;
+  a {
+    color: $text-color;
+    font-family: Roboto, sans-serif;
+  }
+}
+.amenties {
+  .amenties-box {
+    background-color: $lightgrey;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 10px 20px;
+    h6 {
+      font-size: 16px;
+    }
+  }
+}
+.upload {
+  background-color: $lightgrey;
+  border-radius: 15px;
+  padding: 18px 27px;
+  text-transform: capitalize;
+  a {
+    color: $text-color;
+    font-family: Roboto, sans-serif;
+  }
+}
+.story-img {
+  @include potrait {
+    text-align: center;
+  }
+  img {
+    @include potrait {
+      width: 200px !important;
+    }
+  }
+}
+
+.listing {
+  .list-title {
+    font-size: 20px !important;
+  }
+  .save-title {
+    font-size: 20px;
+  }
+  .list-add {
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: $lightgreen;
+    color: $green;
+    .svg-icon {
+      fill: red !important;
+    }
+    a {
+      color: $green;
+    }
+  }
+  .reject {
+    text-transform: capitalize;
+    font-size: 14px !important;
+    color: red;
+  }
+  p {
+    text-transform: capitalize;
+    color: $text-color;
+  }
+  margin-top: 20px;
+  .pendding-delete {
+    margin-left: 100px !important;
+  }
+  .delete {
+    position: relative;
+    cursor: pointer;
+    background-color: $lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+  }
+  .bost {
+    background-color: $green;
+    padding: 10px 20px;
+    border-radius: 15px;
+    h6 {
+      font-size: 12px !important;
+      color: #fff;
+    }
+  }
+
+  .edit {
+    cursor: pointer;
+
+    text-transform: capitalize;
+    a {
+      h6 {
+        font-size: 12px !important;
+        color: $text-color;
+      }
+    }
+    i {
+      margin-left: 9px;
+      font-size: 12px;
+    }
+    border-radius: 15px;
+    background-color: $lightgrey;
+    padding: 7px 10px;
+  }
+  img {
+    border-radius: 15px;
+    object-fit: cover;
+  }
+}
+.inner-box {
+  border-radius: 15px;
+  border: 1px solid $lightgrey;
+  padding: 10px 30px;
+  @include media('<=desktop') {
+    padding: 10px 10px;
+  }
+
+  h6 {
+    font-size: 18px !important;
+  }
+}
+.neighbourhood {
+  .addmore {
+    background-color: $green;
+
+    padding: 14px 24px;
+    border-radius: 15px;
+    a {
+      color: #ffff;
+      font-size: 19px;
+    }
+    i {
+      margin-right: 10px;
+      color: #ffff;
+      font-size: 20px;
+    }
+  }
+  .form-control {
+    padding: 20px 30px;
+    font-size: 20px;
+  }
+
+  .remove {
+    padding: 20px 30px;
+    border-radius: 15px;
+    background-color: $lightgrey;
+    i {
+      margin-right: 10px;
+    }
+  }
+
+  .tab-pane {
+    background-color: #ffff !important;
+    h6 {
+      color: $text-color !important;
+      font-size: 16px;
+    }
+  }
+  .nav-pills {
+    .nav-link {
+      border-radius: 15px;
+      padding: 15px 30px;
+    }
+    h6 {
+      color: $text-color;
+      text-transform: capitalize;
+      font-size: 19px;
+    }
+    .active {
+      background-color: $lightgreen !important;
+      h6 {
+        color: $green;
+      }
+    }
+  }
+}
+.infomation {
+  @include potrait {
+    padding-bottom: 100px;
+  }
+  .postproperty {
+    padding: 14px 24px;
+    border-radius: 15px;
+    background-color: $green;
+    a {
+      color: #ffff;
+      font-size: 19px;
+    }
+  }
+}
+.properrty-id {
+  span {
+    color: $text-color;
+    font-size: 18px !important;
+  }
+}
+.lead-search {
+  @include potrait {
+    flex-direction: column !important;
+  }
+  left {
+    img {
+      object-fit: cover;
+      width: 200px;
+      @include potrait {
+        width: 400px !important;
+      }
+    }
+  }
+}

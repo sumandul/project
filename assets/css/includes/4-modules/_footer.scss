@@ -1,0 +1,77 @@
+
+// .list {
+//     text-align: left;
+// }
+// h4 {
+//     text-transform: capitalize;
+//     font-size: 23px;
+    
+// }
+
+// p {
+//     color: $text-color;
+// }
+// .fa-brands {
+//     margin-right: 24px;
+//     font-size: 24px;
+//     color: $green;
+// }
+// ul {
+//     li {
+//         list-style: none;
+//         text-transform: capitalize;
+//         color: $text-color;
+//         margin: 12px 0;
+//         font-size: 18px;
+  
+//                       .fa-phone-volume {
+//             animation: move 5s infinite linear;
+//         }
+//         @keyframes move {
+//             0% {
+//                 transform: translateX(0);
+//             }
+//             100% {
+//                 transform: translateX(11px);
+//             }
+//         }
+//         .lab {
+//             margin-right: 10px;
+//             color: $green;
+//             font-size: 20px;
+//         }
+//     }
+// }
+// span,
+// p {
+//     font-size: 14px;
+
+// }
+.footer{
+    h4{
+        font-size: 18px;
+        text-transform: capitalize;
+    }
+    margin-top: 100px!important;
+    .lab{
+        color: $green;
+        font-size: 24px;
+    }
+    p{
+        color:$text-color;
+        line-height: 34px;
+      padding: 10px 0px;
+    }
+    ul{
+        li{
+            text-transform: capitalize;
+             padding-bottom: 10px;
+             color:$text-color;
+             i{
+                 color:$green;
+                 font-size: 24px;
+
+             }
+        }
+    }
+}

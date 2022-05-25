@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <meta name="keywords" content="Keywords" />
+  <meta name="description" content="Description" />
+  <meta name="title" property="og:title" content="Title" />
+  <meta property="og:type" content="website" />
+  <meta name="description" property="og:description" content="detail" key="ogdesc" />
+  <meta property="og:site_name" content="AOC" key="ogsitename" />
+  <meta property="og:url" content="https://aoc.com" key="ogurl" />
+  <meta name="application-name" content="aoc" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="aoc" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="msapplication-config" content="/static/icons/browserconfig.xml" />
+  <meta name="msapplication-TileColor" content="#800000" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="theme-color" content="#800000" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/media/logo.png" />
+  <link rel="icon" type="image/svg" sizes="16x16" href="/media/load-svg.svg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:url" content="https://aoc.com.np/" />
+  <meta name="twitter:title" content="aoc" />
+  <meta name="twitter:description" content="desc" />
+  <meta name="twitter:image" content="/imageurl" />
+  <meta name="twitter:creator" content="@aoc" />
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+  <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/vendors/owl/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/vendors/aos/aos.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <!-- Button trigger modal -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="contactpopup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <form action="">
+            <div class="ad-contact ">
+
+              <div class="user-input-name">
+                <input type="text" class="form-control form-control-login login-name">
+                <label for="" class="place-login label-name"> <img src="./assets/img/Iconly-Bulk-Profile.svg" alt="" class="me-1">
+                  FullName</label>
+              </div>
+
+            </div>
+            <div class="ad-contact mt-4">
+              <div class="user-input-name">
+                <input type="text" class="form-control form-control-login login-email">
+                <label for="" class="place-login label-email"> <img src="./assets/img/35.svg" alt="" class="me-1"> E-mail</label>
+              </div>
+            </div>
+            <div class="ad-contact mt-4">
+              <div class="user-input-name">
+                <input type="text" class="form-control form-control-login login-num">
+                <label for="" class="place-login num-label"> <img src="./assets/img/34.svg" alt="" class="me-1"> Phone
+                  Number</label>
+              </div>
+            </div>
+            <div class="ad-contact mt-4">
+              <img src="./assets/img/36.svg" class="call" alt="">
+              <select class="form-select" aria-label="Default select example">
+                <option value="" disabled selected>Property Type</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+
+            <div class="ad-contact mt-4">
+              <img src="./assets/img/36.svg" class="call" alt="">
+              <select class="form-select" aria-label="Default select example">
+                <option value="" disabled selected>Property ID</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="contact-action mt-4 text-center">
+
+              <button class="contact-submit btn"><a href="">Submit</a></button>
+
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+      <div class="container-fluid px-5">
+        <a class="navbar-brand" href="index.html"><img src="assets/img/Original.png" alt="" class="img-fluid" style="width: 160px ; "></a>
+        <button type="button" class="btn btn-success btn-hover btn_a add-btn-mobile"><a href="addproperty.html" class="d-flex justify-content-center align-items-center  "> <i class="las la-plus me-2"></i>Add listing</a></button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <i class="las la-bars"></i>
+
+    </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto align-items-center mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link  " aria-current="page" href="sellhome.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="buyhomeland.html">land</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="rent.html">rent</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="adverties.html">advertise</a>
+            </li>
+              <li class="nav-item ">
+          <a href="login.html" class="nav-link">login in</a>
+              </li>
+              <li class="nav-item">
+                <a href="signup.html" class="nav-link">sign in</a>
+                    </li>
+                    <li class="nav-item add-btn-hide">
+                      <button type="button" class="btn btn-success btn-hover btn_a"><a href="addproperty.html" class="d-flex justify-content-center align-items-center  "> <img src="./assets/img/Fill 4.svg" class="me-2 " alt="" class="svg-icon"> Add listing</a></button>
+                          </li>
+                    
+          </ul>
+         
+         
+    <span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <section class="adverties-banner mt-5 banner-top">
+    <div class="container banner">
+      <div class="row gx-0 gy-5">
+        <div class="col-lg-5">
+          <div class="adverties-content">
+            <div class="advertise-title py-3" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+              <h1>Advertising Guide</h1>
+
+            </div>
+            <div class="inner">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo rem dolor odio vitae similique. Sunt,
+                voluptatem? Reiciendis nostrum porro, quod accusantium necessitatibus quos ducimus laudantium architecto
+                natus sit in repudiandae!
+              </p>
+              <button class="btn search-btn btn-hover mt-3">
+                <h6 data-bs-toggle="modal" data-bs-target="#contactpopup">Contact us</h6>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="adberties-img" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="500">
+            <img
+              src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 alt="
+              class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="problem">
+    <div class="container  ">
+      <div class="row gx-5 gy-4 ">
+        <div class="col-lg-5">
+          <div class="problem-img pt-4" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
+            <img
+              src="https://media.istockphoto.com/photos/teamwork-with-two-business-people-in-office-with-business-analysis-picture-id531545994?s=612x612"
+              alt="" class="img-fluid">
+            <div class="alert white_shadow" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+              <img src="./assets/img/Iconly-Bulk-Danger.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="problem-content py-5 px-4">
+            <h1> We solve Your Problem In Real </h1>
+            <p class="mt-4">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit,do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipiscing .
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="problem realstate">
+    <div class="container">
+      <div class="row gy-4 ">
+        <div class="col-lg-6">
+          <div class="problem-content realstate-content py-5 px-4">
+            <h1> Real Estate Marketing </h1>
+            <p class="mt-4">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit,do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipiscing .
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="problem-img" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
+            <img
+              src="https://media.istockphoto.com/photos/teamwork-with-two-business-people-in-office-with-business-analysis-picture-id531545994?s=612x612"
+              alt="" class="img-fluid">
+            <div class="alert white_shadow" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="500">
+              <img src="./assets/img/megaphone.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="ad mt-5  advertise-img">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-7">
+          <div class="ads mt-2"
+            style="min-height: 180px; background-image: url('https://picsum.photos/600/200'); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 15px;">
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <div class="ads mt-2"
+            style="min-height: 180px; background-image: url('https://picsum.photos/600/200'); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 15px;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="problem leads">
+    <div class="container  ">
+      <div class="row gx-5  gy-4 ">
+        <div class="col-lg-5">
+          <div class="problem-img pt-4" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="linear">
+            <img
+              src="https://media.istockphoto.com/photos/teamwork-with-two-business-people-in-office-with-business-analysis-picture-id531545994?s=612x612"
+              alt="" class="img-fluid">
+            <div class="alert white_shadow" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+              data-aos-duration="1500" data-aos-easing="linear">
+              <i class="las la-exclamation-triangle"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="problem-content realstate-lead py-5 px-4">
+            <h1>Get Real Estate Leads </h1>
+            <p class="mt-4">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit,do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipiscing .
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="problem realstate corelead">
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-6">
+          <div class="problem-content realstate-content py-5 px-4">
+            <h1> Classify Your Core Leads </h1>
+            <p class="mt-4">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit,do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipiscing .
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="problem-img" data-aos="fade-up" data-aos-duration="500" data-aos-easing="linear">
+            <img
+              src="https://media.istockphoto.com/photos/teamwork-with-two-business-people-in-office-with-business-analysis-picture-id531545994?s=612x612"
+              alt="" class="img-fluid">
+            <div class="alert white_shadow" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="linear">
+
+              <img src="./assets/img/system (1).svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="problem market">
+    <div class="container  ">
+      <div class="row gx-5 gy-4">
+        <div class="col-lg-5">
+          <div class="problem-img pt-4" data-aos="fade-up" data-aos-duration="500" data-aos-easing="linear">
+            <img
+              src="https://media.istockphoto.com/photos/teamwork-with-two-business-people-in-office-with-business-analysis-picture-id531545994?s=612x612"
+              alt="" class="img-fluid">
+            <div class="alert white_shadow" data-aos="fade-left" data-aos-duration="1500" data-aos-easing="linear">
+              <i class="las la-exclamation-triangle"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="problem-content py-5 px-4">
+            <h1>Grow Your Bussiness /Market </h1>
+            <p class="mt-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus tempore eius sapiente deleniti tempora
+              adipisci possimus fuga voluptatibus consequatur recusandae quos, quod, magni itaque, natus perferendis.
+              Veniam sed ipsam pariatur.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="adverties-contact mt-5">
+    <div class="container">
+      <div class="row gx-0">
+        <div class="col-12">
+          <div class="contact-content">
+            <div class="row">
+              <div class=" col-md-8 col-lg-8">
+                <h1>
+                  Want to advertise your business?
+                </h1>
+                <p class="text_p">Find out about home loans that you can get</p>
+              </div>
+              <div class="col-sm-4  col-lg-4 text-end">
+                <button class="btn ad-contact btn_a"><a href="" class="d-flex align-items-center" data-bs-toggle="modal"
+                    data-bs-target="#contactpopup"><img src="./assets/img/Call.svg" alt="" > Contact us
+                  </a></button>
+              </div>
+            </div>
+
+            <p></p>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <div class="contact">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <section class="sucess mt-5">
+    <div class="container">
+      <div class="d-flex align-items-center my-5">
+
+        <img src="./assets/img/learn.svg" class="me-3" alt="">
+        <h1> Our Sucess Story</h1>
+      </div>
+      <div class="owl-carousel owl-theme">
+        <div class="item"> 
+             <div class="sucess-content ">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit obcaecati odio, ad culpa est
+            ratione cum eos nulla, excepturi vel voluptatibus iusto. Quae, officia. Molestiae magnam unde quibusdam
+            eum vel!
+          </p>
+          <div class="user d-flex align-items-center mt-5">
+            <div class="user-img" style="width: 100px;">
+              <img src="./assets/img/Image 18.png" alt="" class="img-fluid" width="100%">
+            </div>
+            <div class="user-name ms-3 ">
+              <h6>Alen Exeler</h6>
+              <p>Partner at wing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item"> 
+        <div class="sucess-content">
+     <p>
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit obcaecati odio, ad culpa est
+       ratione cum eos nulla, excepturi vel voluptatibus iusto. Quae, officia. Molestiae magnam unde quibusdam
+       eum vel!
+     </p>
+     <div class="user d-flex align-items-center mt-5">
+       <div class="user-img" style="width: 100px;">
+         <img src="./assets/img/Image 18.png" alt="" class="img-fluid" width="100%">
+       </div>
+       <div class="user-name ms-3 ">
+         <h6>Alen Exeler</h6>
+         <p>Partner at wing</p>
+       </div>
+     </div>
+   </div>
+ </div>
+       
+    </div>
+    
+     
+    </div>
+  </section>
+  <section class="ad  mt-5 advertise-img">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-12">
+          <div class="ads mt-2"
+            style="min-height: 180px; background-image: url('https://picsum.photos/600/200'); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 15px;">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="similar mt-5">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between py-5">
+        <h1>Recommended Properties</h1>
+        <div class="right-arrow d-flex align-items-center ">
+          <div class="right">
+            <img src="./assets/img/Arrow - Right.svg" alt="" style="transform: rotate(180deg);">
+          </div>
+          <div class="left right">
+            <img src="./assets/img/Arrow - Right.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="row  gy-5">
+        <div class=" col-md-6 col-lg-4 ">
+          <div class="property-box">
+            <div class="img">
+              <img src='https://picsum.photos/600/400' alt="" class="img-fluid">
+            </div>
+            <div class="new">
+              new
+            </div>
+            <div class="caption pt-3">
+              <h6 class="pt-2">Office Space</h6>
+              <span class="location"> <img src="./assets/img/Iconly-Bulk-Location.svg" alt="" class="svg-img-color">
+                jasikhel lalitpur</span> <br>
+              <div class="d-flex justify-content-between pt-3">
+                <span class=" "> <img src="./assets/img/Icon ionic-ios-bed.svg" alt="" class="svg-img-color"> 5
+                  bed</span> <span class=""> <img src="./assets/img/assembly-area.svg" alt="" class="svg-img-color">
+                  area 1200 sq.km(A)</span>
+              </div>
+              <div class="d-flex justify-content-between pt-3">
+                <span class=""> <img src="./assets/img/Icon awesome-bath.svg" alt="" class="svg-img-color"> 5
+                  bathrooms</span> <span class=""> <img src="./assets/img/Icon awesome-clock.svg" alt=""
+                    class="svg-img-color"> 9 minutes ago</span>
+              </div>
+
+              <div class="price d-flex justify-content-between">
+                <button class="property-price d-flex">
+                  <h5>rs 70,000</h5> <span>/per year</span>
+                </button>
+                <img src="./assets/img/Heart.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" col-md-6 col-lg-4 ">
+          <div class="property-box">
+            <div class="img">
+              <img src='https://picsum.photos/600/400' alt="" class="img-fluid">
+            </div>
+            <div class="new">
+              new
+            </div>
+            <div class="caption pt-3">
+              <h6 class="pt-2">Castle At Lumberwald</h6>
+              <span class="location"> <img src="./assets/img/Iconly-Bulk-Location.svg" alt="" class="svg-img-color">
+                jasikhel lalitpur</span> <br>
+              <div class="d-flex justify-content-between pt-3">
+                <span class=" "> <img src="./assets/img/Icon ionic-ios-bed.svg" alt="" class="svg-img-color"> 5
+                  bed</span> <span class=""> <img src="./assets/img/assembly-area.svg" alt="" class="svg-img-color">
+                  area 1200 sq.km(A)</span>
+              </div>
+              <div class="d-flex justify-content-between pt-3">
+                <span class=""> <img src="./assets/img/Icon awesome-bath.svg" alt="" class="svg-img-color"> 5
+                  bathrooms</span> <span class=""> <img src="./assets/img/Icon awesome-clock.svg" alt=""
+                    class="svg-img-color"> 9 minutes ago</span>
+              </div>
+
+              <div class="price d-flex justify-content-between">
+                <button class="property-price d-flex">
+                  <h5>rs 70,000</h5> <span>/per year</span>
+                </button>
+                <img src="./assets/img/Heart.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 ">
+          <div class="property-box">
+            <div class="img">
+              <img src='https://picsum.photos/600/400' alt="" class="img-fluid">
+            </div>
+            <div class="new">
+              new
+            </div>
+            <div class="caption pt-3">
+              <h6 class="pt-2">Parking Space</h6>
+              <span class="location"> <img src="./assets/img/Iconly-Bulk-Location.svg" alt="" class="svg-img-color">
+                jasikhel lalitpur</span> <br>
+              <div class="d-flex justify-content-between pt-3">
+                <span class=" "> <img src="./assets/img/Icon ionic-ios-bed.svg" alt="" class="svg-img-color"> 5
+                  bed</span> <span class=""> <img src="./assets/img/assembly-area.svg" alt="" class="svg-img-color">
+                  area 1200 sq.km(A)</span>
+              </div>
+              <div class="d-flex justify-content-between pt-3">
+                <span class=""> <img src="./assets/img/Icon awesome-bath.svg" alt="" class="svg-img-color"> 5
+                  bathrooms</span> <span class=""> <img src="./assets/img/Icon awesome-clock.svg" alt=""
+                    class="svg-img-color"> 9 minutes ago</span>
+              </div>
+
+              <div class="price d-flex justify-content-between">
+                <button class="property-price d-flex">
+                  <h5>rs 70,000</h5> <span>/per year</span>
+                </button>
+                <img src="./assets/img/Heart.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="ad mt-5">
+    <div class="container">
+      <div class="row gy-4">
+
+        <div class="col-sm-6 col-lg-4 ">
+          <div class="ads mt-2"
+            style="min-height: 180px; background-image: url('https://picsum.photos/600/200'); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 15px;">
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="ads mt-2"
+            style="min-height: 180px; background-image: url('https://picsum.photos/600/200'); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 15px;">
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-4">
+          <div class="ads mt-2"
+            style="min-height: 180px; background-image: url('https://picsum.photos/600/200'); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 15px;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </div>
+  </section>
+  <section class="footer mt-5">
+    <div class="container">
+      <div class="row  gx-5 gy-5 justify-content-center">
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <div class="logo">
+            <img src="assets/img/Original.png" alt="" class="img-fluid" style="width: 153 ; height: 40px;">
+          </div>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum .
+          </p>
+          <span><a href=""><i class="lab la-facebook-f"></i></a></span>
+          <span><a href=""><i class="lab la-instagram mx-3"></i></a></span>
+          <span><a href=""><i class="lab la-twitter me-3"></i></a></span>
+          <span><a href=""><i class="lab la-youtube"></i></a></span>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3 text-start">
+          <h4>company</h4>
+          <ul class="ps-0 mt-4">
+            <li>about</li>
+            <li>contact</li>
+            <li>carrer</li>
+            <li>blog</li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <h4>support</h4>
+          <ul class="ps-0 mt-4">
+            <li>FAQ</li>
+            <li>Booking</li>
+            <li>City Guide</li>
+            <li>Cancellation Option</li>
+          </ul>
+        </div>
+        <div class="col-sm-6  col-md-6 col-lg-3">
+          <h4>office</h4>
+          <ul class="ps-0 mt-4">
+            <li> <img src="./assets/img/Location.svg" class="me-1 footer-svg" alt=""> Kathmandu, Nepal</li>
+            <li>
+              <img src="./assets/img/35.svg" alt="" class="me-1 footer-svg"> info@smartholdings.com
+            </li>
+
+            <li> <img src="./assets/img/34.svg" class="me-1 footer-svg" alt=""> +977 9825486754</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <div class="row my-3 justify-content-center gx-0">
+          <div class="col-md-4">
+            <p>©2021 Merolagaani</p>
+          </div>
+          <div class="col-md-4">
+            <p>Designed by Tecare Software</p>
+          </div>
+          <div class="col-md-4">
+            <p>
+              <span class="p-footer">Terms & Conditions</span>
+              <span class=" p-footer mx-2">Privacy Policy</span>
+              <span class=" p-footer">FAQS</span>
+            </p>
+          </div>
+
+        </div>
+      </div>
+  </section>
+  <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+  <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendors/owl/owl.carousel.min.js"></script>
+  <script src="assets/vendors/aos/aos.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:20,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:2
+        }
+    }
+})
+  </script>
+</body>
+
+</html>
